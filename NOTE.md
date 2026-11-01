@@ -26,8 +26,8 @@ I file in `data/` sono letti "rete prima": i contenuti nuovi arrivano subito anc
 ```
 index.html · manifest.webmanifest · sw.js · _headers
 css/style.css
-js/  core.js (dati, SRS, XP, furigana) · audio.js · quiz.js (esercizi) · study.js · jlpt.js · jlpt-read.js · jlpt-listen.js (generatori formato JLPT) · main.js · exam.js · app.js
-data/  kana.json · strokes.json · kanji-elenco.json
+js/  core.js (dati, SRS, XP, furigana) · audio.js · quiz.js (esercizi) · study.js · jlpt.js · jlpt-read.js · jlpt-listen.js (generatori formato JLPT) · main.js · exam.js · path.js (percorsi guidati) · app.js
+data/  kana.json · strokes.json · kanji-elenco.json · percorso.json (curriculum guidato, generato)
        kanji-n5|n4|n3.json · vocabolario-… · grammatica-… · testi-… · ascolto-… · esercizi-…
 audio/n5|n4|n3/   (mp3 opzionali, vedi audio/README.md)
 icons/  _strumenti/
@@ -80,7 +80,8 @@ Stato: kanji N5/N4/N3 completi (elenchi Kanshudo), grammatica completa, vocabola
 
 ## 6. Audio
 - **Voce del dispositivo (sempre attiva):** usata per tutti gli esercizi generati e come ripiego.
-- **File pre-generati (`audio/<livello>/…m4a`):** dialoghi, coppie minime, dettati, risposte rapide e shadowing di N5/N4/N3, creati in locale e gratis con **VOICEVOX** (voci 四国めたん e 青山龍星, accento giapponese naturale) e `afconvert`: nessun token. AAC mono 40 kbps. Dettagli in `audio/README.md`; script `_strumenti/genaudio.py`. **Crediti obbligatori:** «VOICEVOX:四国めたん», «VOICEVOX:青山龍星» (già in Impostazioni → App). Verifica le condizioni d'uso dei personaggi sul sito VOICEVOX prima di pubblicare.
+- **File pre-generati (`audio/…m4a`):** tutto l'audio fisso dell'app è registrato in locale e gratis con **VOICEVOX** (voci 四国めたん e 青山龍星, accento giapponese naturale) e `afconvert`, in AAC mono **24 kbps** (qualità ridotta per tenere leggera la cartella): dialoghi, coppie minime, dettati, risposte rapide, shadowing, le ~2.600 frasi di Tatoeba (`audio/fr/`), i kana (`audio/kana/`) e **ogni parola o frase che ha un pulsante 🔊** (vocabolario, parole dei kanji, esempi di grammatica, testi: `audio/t/<hash>.m4a`, con l'elenco in `audio/index.json`). Solo gli esercizi generati a caso (numeri, formato JLPT) usano la voce del dispositivo. Script: `_strumenti/genall.py` e `_strumenti/genkana.py` (richiedono il motore VOICEVOX avviato). **Crediti obbligatori:** «VOICEVOX:四国めたん», «VOICEVOX:青山龍星» (già in Impostazioni → App). Verifica le condizioni d'uso dei personaggi sul sito VOICEVOX prima di pubblicare.
+- **Kana:** i suoni di hiragana e katakana (tabelle, esercizi di ascolto kana) sono pre-registrati in `audio/kana/` con VOICEVOX 四国めたん (`_strumenti/genkana.py`).
 - **Altre opzioni gratuite/offline:** voci open source (es. Piper) se hanno un modello giapponese con licenza adatta; espeak-ng suona molto meccanico in giapponese.
 
 ## 7. Funzioni principali (dove sono)
@@ -115,3 +116,23 @@ Esercizi → **Formato JLPT · generato** (`#/jlpt`). I *tipi* di domanda riprod
 Esercizi → **Frasi vere**: italiano → giapponese, giapponese → italiano, riordino, completa la parola, ascolto, dettato, shadowing, mix. Le frasi alimentano anche gli esercizi esistenti (traduzione, riordino, cloze, dettato, shadowing, ascolto, mix del giorno). Per ricrearle o ampliarle vedi `_strumenti/LEGGIMI.md`.
 Anche le frasi hanno l'audio pre-registrato con VOICEVOX (`audio/fr/`, voce femminile/maschile alternata in base all'id) usato in ascolto, dettato e shadowing.
 Crediti obbligatori: «Tatoeba (tatoeba.org), CC BY 2.0 FR» è già riportato in Impostazioni → App.
+
+
+## 11. Percorsi guidati (dalla versione 2.5.0)
+Scheda **Percorso** (`#/path`): un cammino N5 → N4 → N3 in ordine, con sblocco per padronanza. Codice in `js/path.js`, curriculum in `data/percorso.json`.
+
+**Metodo (come lo farebbe un insegnante)**
+- **Unità** (N5: 5 di alfabeti + 10 di contenuti; N4: ponte + 12; N3: ponte + 14). Ogni unità ha un obiettivo («alla fine sarai in grado di…») e una lezione in passi: *kanji* (a gruppi di 8, con SRS) → *parole* (a gruppi di 10) → *grammatica* (schede da studiare) → *leggi e ascolta* (testi e dialoghi dell’unità) → *pratica guidata* (≥ 60%) → **verifica** (≥ 80% per aprire l’unità successiva).
+- **Ripasso a spirale:** ogni verifica contiene ~25% di domande dalle unità precedenti; per N4 e N3 metà del ripasso viene dai livelli inferiori (N4 include N5, N3 include N5 + N4). Le domande su cui sbagli hanno la precedenza.
+- **Checkpoint** cumulativi (~30 domande, ≥ 75%) ogni 4 unità e a fine alfabeti. Prima di N4 e N3 c’è un’unità «ponte» di ripasso (≥ 70%).
+- **Esame finale** di ogni livello = simulazione completa (le 4 parti dell’esame, generata e cumulativa) con timer. Si supera con i punteggi minimi JLPT **e** almeno il 60% di risposte corrette (margine di sicurezza: il punteggio qui è una stima, non la scala equalizzata ufficiale). Il livello successivo si apre solo dopo (oppure con «Sblocca comunque» / test d’ingresso).
+- Il passo «kanji» di N4/N3 assegna ogni kanji all’unità in cui compare nelle parole studiate (così si impara nel contesto); N5 è raggruppato a mano per tema (numeri, giorni, natura, verbi…). N3 ha poche parole (vedi §9), quindi molti kanji N3 sono distribuiti per ordine di frequenza.
+
+**Cambiare il curriculum:** modifica `SPEC` (unità, obiettivi, schede, testi, dialoghi, categorie di vocabolario) in `_strumenti/genpercorso.py` e rilancia dalla cartella dell’app:
+```
+python3 -I _strumenti/genpercorso.py
+```
+Lo script **verifica** che ogni scheda di grammatica, kanji, testo, dialogo e parola sia assegnato una sola volta (si ferma con un errore se manca o è duplicato) e stampa la tabella di quanti elementi ha ogni unità. Dopo ogni modifica incrementa VERSION (sw.js + core.js).
+
+**Dati salvati:** `S.path` in localStorage (`u` unità, `cp` checkpoint, `fin` esami finali, `open` livelli sbloccati a mano); è incluso nei backup. «Azzera i progressi del percorso» è in fondo alla scheda Percorso. Soglie in `PTH` (inizio di `js/path.js`).
+**Limiti noti:** le verifiche sono create da IA con i contenuti dell’app (stessa avvertenza del §4); l’esame finale è una stima; se una scheda o un esercizio ha pochi esercizi, la verifica integra con altre domande dell’unità.

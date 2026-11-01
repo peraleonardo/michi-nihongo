@@ -2,9 +2,13 @@
 /* Audio: speechSynthesis (fase 1) + m4a opzionali in audio/<livello>/<id>.m4a (fase 2) con ripiego automatico sulla voce */
 const ICON_PLAY = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
 const ICON_SPK = '<svg viewBox="0 0 24 24"><path d="M3 10v4h4l5 4V6L7 10H3zm13.5 2A4.5 4.5 0 0 0 14 8v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg>';
+// hash dei testi letti (stessa funzione di _strumenti/genall.py): audio/t/<hash>.m4a, elenco in audio/index.json
+const auHash = (str) => { let h1 = 0xdeadbeef | 0, h2 = 0x41c6ce57 | 0; for (let i = 0; i < str.length; i++) { const ch = str.charCodeAt(i); h1 = Math.imul(h1 ^ ch, 2654435761); h2 = Math.imul(h2 ^ ch, 1597334677); } h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507); h1 ^= Math.imul(h2 ^ (h2 >>> 13), 3266489909); h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507); h2 ^= Math.imul(h1 ^ (h1 >>> 13), 3266489909); return (4294967296 * (2097151 & h2) + (h1 >>> 0)).toString(36); };
 const AU = {
+  idx: new Set(),
   voices: [], specs: [], miss: new Set(), cur: null, tok: 0, seqTok: 0, playing: null,
   init() {
+    fetch('audio/index.json').then(r => r.ok ? r.json() : []).then(l => { AU.idx = new Set(l); }).catch(() => { });
     if (!('speechSynthesis' in window)) return;
     const f = () => { AU.voices = speechSynthesis.getVoices().filter(v => /^ja/i.test(v.lang)); };
     f(); try { speechSynthesis.addEventListener('voiceschanged', f); } catch (e) { speechSynthesis.onvoiceschanged = f; }
@@ -46,7 +50,9 @@ const AU = {
   // spec: {t: testo con markup, f: 'n5/id' (m4a opzionale), who: 'F'|'M'}
   async say(spec, rate) {
     rate = rate || S.set.rate || 1;
-    if (spec.f && !AU.miss.has(`audio/${spec.f}.m4a`)) { if (await AU.file(`audio/${spec.f}.m4a`, rate)) return true; }
+    let f = spec.f;
+    if (!f && AU.idx.size) { const h = auHash((spec.who === 'M' ? 'M:' : 'F:') + yomi(spec.t)); if (AU.idx.has(h)) f = 't/' + h; }
+    if (f && !AU.miss.has(`audio/${f}.m4a`)) { if (await AU.file(`audio/${f}.m4a`, rate)) return true; }
     return AU.speak(yomi(spec.t), { who: spec.who, rate });
   },
   async seq(lines, id, lv, rate) { // dialogo: righe {s:'A', t, g:'F'|'M'}
@@ -62,6 +68,9 @@ const AU = {
   stop() { AU.seqTok++; AU.tok++; try { speechSynthesis.cancel(); } catch (e) { } try { AU.cur && AU.cur.pause(); } catch (e) { } },
   reg(spec) { AU.specs.push(spec); return AU.specs.length - 1; }
 };
+// audio dei kana pre-registrati (audio/kana/<codepoint>.m4a, vedi _strumenti/genkana.py)
+const kanaF = k => /^[ぁ-ゖァ-ヶ]{1,2}$/.test(k) ? 'kana/' + [...k].map(c => c.codePointAt(0).toString(16)).join('-') : undefined;
+const kanaSpec = k => ({ t: k, f: kanaF(k) });
 // bottone 🔊 per una frase/parola
 const spk = (t, o = {}) => `<button class="spk" data-ps="${AU.reg({ t, f: o.f, who: o.who })}" aria-label="Ascolta">${ICON_SPK}</button>`;
 const rateChips = () => `<div class="rates">${[.7, .85, 1].map(r => `<button data-rate="${r}" class="${(S.set.rate || 1) === r ? 'on' : ''}">${String(r).replace('.', ',')}×</button>`).join('')}</div>`;
@@ -80,6 +89,7 @@ function audioList(lv) {
   (a.dettato || []).forEach(c => out.push({ f: `${lv}/${c.id}`, t: yomi(c.t), g: c.g || 'F', k: 'dettato' }));
   (a.risposte || []).forEach(c => out.push({ f: `${lv}/${c.id}`, t: yomi(c.p), g: c.g || 'M', k: 'risposta' }));
   (a.shadowing || []).forEach(c => out.push({ f: `${lv}/${c.id}`, t: yomi(c.t), g: c.g || 'F', k: 'shadowing' }));
+  if (lv === 'n5' && DB.kana) { const ks = [...DB.kana.groups.flatMap(g => g.rows.flat().map(x => x[0])), ...DB.kana.groups.flatMap(g => g.rows.flat().map(x => toKata(x[0]))), ...(DB.kana.kataExtra || []).map(x => x[0])]; ks.forEach(k => out.push({ f: kanaF(k), t: k, g: 'F', k: 'kana' })); }
   (DB.frasi[lv] || []).forEach(x => out.push({ f: `fr/${x.id}`, t: yomi(x.b.join('')), g: parseInt(x.id.slice(2), 10) % 2 === 0 ? 'F' : 'M', k: 'frase' }));
   return out;
 }
@@ -90,8 +100,8 @@ function audioCsv() {
 }
 async function cacheAudio(levels, progress) { // scarica nella cache offline gli m4a esistenti per i livelli scelti
   if (!('caches' in window)) return { ok: 0, tot: 0 };
-  const c = await caches.open('michi-audio-2'); let ok = 0, tot = 0;
-  const list = levels.flatMap(l => audioList(l));
+  const c = await caches.open('michi-audio-3'); let ok = 0, tot = 0;
+  const list = [...levels.flatMap(l => audioList(l)), ...[...AU.idx].map(h => ({ f: 't/' + h }))];
   for (const x of list) {
     tot++; const url = `audio/${x.f}.m4a`;
     try { if (await c.match(url)) { ok++; } else { const r = await fetch(url); if (r.ok && /audio|octet/.test(r.headers.get('content-type') || 'audio')) { await c.put(url, r); ok++; } } } catch (e) { }

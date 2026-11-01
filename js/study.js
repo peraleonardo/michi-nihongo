@@ -56,8 +56,8 @@ V.kanaChart = function (script) {
     <div class="seg" style="margin:10px 0"><button class="${kata ? '' : 'on'}" onclick="nav('#/kana/hira')">Hiragana</button><button class="${kata ? 'on' : ''}" onclick="nav('#/kana/kata')">Katakana</button></div>
     <p class="small mut">Tocca un carattere per ascoltarlo e vedere l’ordine dei tratti. ${'Bordo verde = già imparato.'}</p>${note}${groups}${extra}</div>`;
   $$('.kcell[data-k]').forEach(b => b.onclick = () => {
-    const k = b.dataset.k, r = b.dataset.r; AU.say({ t: k });
-    const sh = sheet(`<div class="c"><div class="kanji-big jp" style="font-size:72px">${k}</div><div class="b" style="font-size:22px">${r} ${spk(k)}</div></div>${strokeBlock(k)}<p class="tiny mut c" style="margin-top:12px">Tratti: KanjiVG (CC BY-SA 3.0)</p>`);
+    const k = b.dataset.k, r = b.dataset.r; AU.say(kanaSpec(k));
+    const sh = sheet(`<div class="c"><div class="kanji-big jp" style="font-size:72px">${k}</div><div class="b" style="font-size:22px">${r} ${spk(k, { f: kanaF(k) })}</div></div>${strokeBlock(k)}<p class="tiny mut c" style="margin-top:12px">Tratti: KanjiVG (CC BY-SA 3.0)</p>`);
     bindStrokes(sh);
   });
 };
@@ -98,23 +98,24 @@ V.vocabList = function (lv, cat) {
 };
 
 /* ---------- sessione SRS (flashcard) ---------- */
-V.srs = function (sec, lv, more) {
+V.srs = function (sec, lv, more, opt) { // opt: sessione su un elenco di carte deciso dal percorso {ids, back, self, more}
   let ids = [];
-  if (sec === 'all') { for (const l of LEVELS) for (const s of ['kanji', 'vocab']) deckIds(s, l).forEach(id => { if (isDue(id)) ids.push(id); }); }
+  if (opt) ids = opt.ids;
+  else if (sec === 'all') { for (const l of LEVELS) for (const s of ['kanji', 'vocab']) deckIds(s, l).forEach(id => { if (isDue(id)) ids.push(id); }); }
   else {
     const all = deckIds(sec, lv), due = all.filter(isDue), nw = all.filter(id => !S.srs[id]).slice(0, more ? 5 : newLeft(sec));
     ids = [...due, ...nw];
   }
   ids.sort((a, b) => (S.srs[a] ? S.srs[a].due : 9e15) - (S.srs[b] ? S.srs[b].due : 9e15) || 0);
-  const backH = sec === 'all' ? '#/home' : (sec === 'kanji' ? '#/kanji/' : '#/vocab/') + lv;
+  const backH = opt ? opt.back : sec === 'all' ? '#/home' : (sec === 'kanji' ? '#/kanji/' : '#/vocab/') + lv;
   if (!ids.length) {
-    view().innerHTML = `<div class="page">${back(backH, 'Indietro')}<div class="card c"><div style="font-size:54px">🎉</div><h2>Tutto in ordine!</h2><p class="mut">Non hai carte da ripassare${sec === 'all' ? '' : ' o nuove per oggi'}. Il prossimo ripasso arriverà in automatico.</p>${sec !== 'all' && deckIds(sec, lv).some(id => !S.srs[id]) ? `<a class="btn primary" href="#/srs/${sec}/${lv}/more">Impara altre 5 nuove</a>` : ''}<a class="btn" style="margin-top:10px" href="${backH}">Torna indietro</a></div></div>`; return;
+    view().innerHTML = `<div class="page">${back(backH, 'Indietro')}<div class="card c"><div style="font-size:54px">🎉</div><h2>Tutto in ordine!</h2><p class="mut">${opt ? 'Hai già visto tutte le carte di questo gruppo: il prossimo ripasso arriverà in automatico.' : `Non hai carte da ripassare${sec === 'all' ? '' : ' o nuove per oggi'}. Il prossimo ripasso arriverà in automatico.`}</p>${!opt && sec !== 'all' && deckIds(sec, lv).some(id => !S.srs[id]) ? `<a class="btn primary" href="#/srs/${sec}/${lv}/more">Impara altre 5 nuove</a>` : ''}<a class="btn" style="margin-top:10px" href="${backH}">Torna indietro</a></div></div>`; return;
   }
   document.body.classList.add('focus');
   const queue = [...ids], total = ids.length; let done = 0, xp = 0, flipped = false, again = 0;
   const finish = () => {
     document.body.classList.remove('focus'); snd('done'); confetti(); addXP(10, true);
-    view().innerHTML = `<div class="page done"><div class="big">🌟</div><h1>Sessione completata!</h1><p class="mut">${total} carte ripassate${again ? ` · ${again} da rivedere` : ''}</p><div class="row" style="justify-content:center;margin:14px 0"><div class="stat" style="background:var(--card);box-shadow:var(--sh)"><b>+${xp + 10}</b><span>XP</span></div></div><div class="grid2">${sec !== 'all' && deckIds(sec, lv).some(id => !S.srs[id]) ? `<a class="btn" href="#/srs/${sec}/${lv}/more">Altre 5 nuove</a>` : '<a class="btn" href="#/study">Studia</a>'}<a class="btn primary" href="${backH}">Fine</a></div></div>`;
+    view().innerHTML = `<div class="page done"><div class="big">🌟</div><h1>Sessione completata!</h1><p class="mut">${total} carte ripassate${again ? ` · ${again} da rivedere` : ''}</p><div class="row" style="justify-content:center;margin:14px 0"><div class="stat" style="background:var(--card);box-shadow:var(--sh)"><b>+${xp + 10}</b><span>XP</span></div></div><div class="grid2">${opt ? (opt.more && opt.more() ? `<a class="btn" href="${opt.self}">Altre carte nuove</a>` : `<a class="btn" href="#/study">Studia</a>`) : sec !== 'all' && deckIds(sec, lv).some(id => !S.srs[id]) ? `<a class="btn" href="#/srs/${sec}/${lv}/more">Altre 5 nuove</a>` : '<a class="btn" href="#/study">Studia</a>'}<a class="btn primary" href="${backH}">Fine</a></div></div>`;
   };
   const draw = () => {
     if (!queue.length) return finish();
@@ -166,7 +167,7 @@ V.gramDetail = function (id) {
   const g = DB.byId['g:' + id]; if (!g) { view().innerHTML = empty('Scheda non trovata', ''); return; }
   const li = a => a && a.length ? `<ul>${a.map(x => `<li>${rich(x)}</li>`).join('')}</ul>` : '';
   const exN = (g.es || []).length;
-  view().innerHTML = `<div class="page">${back('#/gram/' + g.lv, 'Grammatica ' + LV[g.lv])}
+  view().innerHTML = `<div class="page">${back(PATH.from || '#/gram/' + g.lv, PATH.from ? 'Unità' : 'Grammatica ' + LV[g.lv])}
   <div class="gh"><span class="lvl ${g.lv}" style="background:#fff;color:var(--lc)">${LV[g.lv]}</span> ${g.cat ? `<span class="tag" style="background:rgba(255,255,255,.25);color:#fff">${esc(g.cat)}</span>` : ''}<div class="f jp">${rich(g.f || g.t)}</div><div>${esc(g.s)}</div></div>
   <div class="gblock card"><h3>📘 La regola</h3>${String(g.regola || '').split('\n\n').map(p => `<p>${rich(p)}</p>`).join('')}</div>
   ${g.form && g.form.length ? `<div class="gblock card"><h3>🧩 Come si forma</h3>${li(g.form)}</div>` : ''}
@@ -194,7 +195,7 @@ function wordPop(key, gl) {
 }
 V.readText = function (id) {
   const t = DB.byId[id]; if (!t) { view().innerHTML = empty('Testo non trovato', ''); return; }
-  view().innerHTML = `<div class="page">${back('#/read/' + t.lv, 'Testi ' + LV[t.lv])}<span class="lvl ${t.lv}">${LV[t.lv]}</span> <span class="tag">${esc(t.tipo || '')}</span><h1 class="jp" style="margin-top:6px">${rich(t.t)}</h1>
+  view().innerHTML = `<div class="page">${back(PATH.from || '#/read/' + t.lv, PATH.from ? 'Unità' : 'Testi ' + LV[t.lv])}<span class="lvl ${t.lv}">${LV[t.lv]}</span> <span class="tag">${esc(t.tipo || '')}</span><h1 class="jp" style="margin-top:6px">${rich(t.t)}</h1>
   <div class="row" style="margin:10px 0"><button class="btn sm" id="tplay">🔊 Ascolta</button>${rateChips()}<span class="sp"></span><button class="chip ${S.set.trans ? 'on' : ''}" id="ttr">Traduzione</button></div>
   <div class="card"><div class="read-text jp">${t.jp.map((p, i) => `<p>${tapHtml(p, t.gl)}</p><div class="small mut ${S.set.trans ? '' : 'hide'} ti" style="margin:-4px 0 8px">${esc((t.it || [])[i] || '')}</div>`).join('')}</div><p class="tiny mut">👆 Tocca le parole sottolineate per lettura e significato.</p></div>
   ${t.gl ? `<div class="card flat"><h3>Parole del testo</h3>${Object.entries(t.gl).map(([w, [r, it]]) => `<div class="word"><div class="jp">${wr(w, r)}</div><div class="small mut" style="flex:1">${esc(it)}${rom(r) ? '<br>' + rom(r) : ''}</div></div>`).join('')}</div>` : ''}
@@ -203,7 +204,7 @@ V.readText = function (id) {
   $('#ttr').onclick = () => { S.set.trans = !S.set.trans; save(); $('#ttr').classList.toggle('on'); $$('.ti').forEach(x => x.classList.toggle('hide', !S.set.trans)); };
   $('#tq').onclick = () => {
     AU.stop(); const items = (t.q || []).map(q => ({ ...q, ty: 'read', sec: 'read', lv: t.lv, sid: t.id, ctx: t.id }));
-    Q.run(items, { back: '#/read/' + t.lv, onDone: () => { if (!S.read[t.id]) { S.read[t.id] = today(); bump('read'); addXP(15); checkBadges(); } nav('#/read/' + t.lv); } });
+    Q.run(items, { back: PATH.from || '#/read/' + t.lv, onDone: () => { if (!S.read[t.id]) { S.read[t.id] = today(); bump('read'); addXP(15); checkBadges(); } nav(PATH.from || '#/read/' + t.lv); } });
   };
 };
 document.addEventListener('click', e => {
@@ -223,7 +224,7 @@ V.dialog = function (id) {
   const d = DB.byId[id]; if (!d) return;
   let showJ = true, showI = S.set.trans;
   const draw = () => {
-    view().innerHTML = `<div class="page">${back('#/listen/' + d.lv, 'Dialoghi')}<span class="lvl ${d.lv}">${LV[d.lv]}</span><h1 class="jp" style="margin-top:6px">${rich(d.t)}</h1>
+    view().innerHTML = `<div class="page">${back(PATH.from || '#/listen/' + d.lv, PATH.from ? 'Unità' : 'Dialoghi')}<span class="lvl ${d.lv}">${LV[d.lv]}</span><h1 class="jp" style="margin-top:6px">${rich(d.t)}</h1>
     <div class="audio-panel"><button class="play" id="dp">${ICON_PLAY}</button><div><div class="b">Ascolta tutto</div><div class="tiny mut">Due voci diverse</div></div>${rateChips()}</div>
     <div class="chips"><button class="chip ${showJ ? 'on' : ''}" id="tj">Trascrizione</button><button class="chip ${showI ? 'on' : ''}" id="ti">Traduzione</button></div>
     <div class="card">${d.righe.map((l, i) => `<div class="ex"><b style="color:var(--s-asc);min-width:18px">${esc(l.s)}</b><div style="flex:1">${showJ ? `<div class="j">${rich(l.t)}</div>` : '<div class="j mut">・・・</div>'}${showI ? `<div class="i">${esc(l.i || '')}</div>` : ''}</div><button class="spk" data-line="${i}">${ICON_SPK}</button></div>`).join('')}</div>
@@ -231,7 +232,8 @@ V.dialog = function (id) {
     $('#dp').onclick = () => AU.seq(d.righe, d.id, d.lv);
     $$('[data-line]').forEach(b => b.onclick = () => AU.say({ t: d.righe[+b.dataset.line].t, f: `${d.lv}/${d.id}_${+b.dataset.line + 1}`, who: d.righe[+b.dataset.line].g || (d.v && d.v[d.righe[+b.dataset.line].s]) || (d.righe[+b.dataset.line].s === 'A' ? 'F' : 'M') }));
     $('#tj').onclick = () => { showJ = !showJ; draw(); }; $('#ti').onclick = () => { showI = !showI; draw(); };
-    if ($('#dq')) $('#dq').onclick = () => { AU.stop(); Q.run(Q.listenSet(d.lv, 99).filter(x => x.sid === d.id), { back: '#/d/' + d.id, level: d.lv }); };
+    if ($('#dq')) $('#dq').onclick = () => { AU.stop(); Q.run(Q.listenSet(d.lv, 99).filter(x => x.sid === d.id), { back: '#/d/' + d.id, level: d.lv, onDone: () => { if (!S.read[d.id]) { S.read[d.id] = today(); bump('read'); addXP(10); } nav('#/d/' + d.id); } }); };
   };
+  if (!(d.q && d.q.length) && !S.read[d.id]) { S.read[d.id] = today(); save(); }
   draw();
 };

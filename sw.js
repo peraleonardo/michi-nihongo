@@ -1,14 +1,14 @@
 /* Service worker di Michi.
    >>> Per forzare l'aggiornamento sui dispositivi, cambia VERSION (e APP_VERSION in js/core.js) ad ogni pubblicazione. <<< */
-const VERSION = '2.3.0';
+const VERSION = '2.5.0';
 const CACHE = 'michi-' + VERSION;
-const AUDIO_CACHE = 'michi-audio-2'; // cambia il numero (anche in js/audio.js) quando rigeneri i file audio: così i dispositivi riscaricano le nuove registrazioni
+const AUDIO_CACHE = 'michi-audio-3'; // cambia il numero (anche in js/audio.js) quando rigeneri i file audio: così i dispositivi riscaricano le nuove registrazioni
 const CORE = [
   './', 'index.html', 'manifest.webmanifest',
   'css/style.css',
-  'js/core.js', 'js/audio.js', 'js/quiz.js', 'js/study.js', 'js/jlpt.js', 'js/jlpt-read.js', 'js/jlpt-listen.js', 'js/frasi.js', 'js/main.js', 'js/exam.js', 'js/app.js',
+  'js/core.js', 'js/audio.js', 'js/quiz.js', 'js/study.js', 'js/jlpt.js', 'js/jlpt-read.js', 'js/jlpt-listen.js', 'js/frasi.js', 'js/main.js', 'js/exam.js', 'js/path.js', 'js/app.js',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-maskable-512.png', 'icons/apple-touch-icon.png',
-  'data/kana.json', 'data/strokes.json', 'data/kanji-elenco.json', 'data/frasi.json'
+  'data/kana.json', 'data/percorso.json', 'data/strokes.json', 'data/kanji-elenco.json', 'data/frasi.json'
 ].concat(['n5', 'n4', 'n3'].flatMap(l => ['kanji', 'vocabolario', 'grammatica', 'testi', 'ascolto', 'esercizi'].map(t => `data/${t}-${l}.json`)));
 
 self.addEventListener('install', e => {

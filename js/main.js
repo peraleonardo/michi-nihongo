@@ -62,6 +62,7 @@ V.home = function () {
   <div class="hero"><div class="row"><div><div class="small">${hr < 12 ? 'Buongiorno' : hr < 18 ? 'Buon pomeriggio' : 'Buonasera'} · ${hr < 11 ? 'おはよう' : hr < 18 ? 'こんにちは' : 'こんばんは'}</div><h1 style="font-size:24px">Livello ${xi.lvl} · ${rank(xi.lvl)}</h1></div></div>
     <div class="bar" style="margin:12px 0 6px"><i style="width:${pct(xi.cur, xi.need)}%"></i></div><div class="tiny" style="opacity:.9">${xi.cur}/${xi.need} XP al livello ${xi.lvl + 1}</div>
     <div class="row" style="margin-top:12px;gap:8px"><div class="stat"><b>🔥 ${stk}</b><span>giorni di fila</span></div><div class="stat"><b>⭐ ${S.xp}</b><span>XP totali</span></div><div class="stat"><b>🎯 ${Math.min(d.xp, S.set.goal)}/${S.set.goal}</b><span>obiettivo</span></div></div></div>
+  ${PATH.homeCard()}
   <a class="card row" href="#/plan"><div class="ring" style="--p:${el};--rc:var(--lc)"><b>${el}%</b></div><div style="flex:1"><div class="b">JLPT N3 · ${fmtDate(S.set.examDate)}</div><div class="small mut">Mancano <b>${Math.max(0, dl)}</b> giorni · ora: <span class="lvl ${cw.lv}">${LV[cw.lv]}</span> settimana ${cw.i + 1}</div></div><span class="go">›</span></a>
   <div class="sec-t"><h2>Oggi da fare</h2><span class="small mut">${nd}/${tasks.length} ${nd === tasks.length ? '🎉' : ''}</span></div>
   ${bar(pct(nd, tasks.length), 'var(--ok)')}
@@ -84,7 +85,8 @@ V.study = function () {
   ${tile('gram', '文', 'Grammatica', `${gd}/${g.length} strutture`, '#/gram/' + lv, pct(gd, g.length))}
   ${tile('read', '読', 'Lettura', `${td}/${t.length} testi`, '#/read/' + lv, pct(td, t.length))}
   ${tile('asc', '聞', 'Ascolto', `${dl} dialoghi`, '#/listen/' + lv)}</div>
-  <a class="item" style="margin-top:16px" href="#/srs/all/all"><div class="ico s-ex">🔁</div><div style="flex:1"><div class="t">Ripasso SRS</div><div class="d">${totalDue()} carte in scadenza (kanji e parole)</div></div><span class="go">›</span></a>
+  <a class="item" style="margin-top:16px" href="#/path/${lv}"><div class="ico s-exam">🧭</div><div style="flex:1"><div class="t">Percorso guidato ${LV[lv]}</div><div class="d">Unità in ordine, verifiche e esame finale</div></div><span class="go">›</span></a>
+  <a class="item" href="#/srs/all/all"><div class="ico s-ex">🔁</div><div style="flex:1"><div class="t">Ripasso SRS</div><div class="d">${totalDue()} carte in scadenza (kanji e parole)</div></div><span class="go">›</span></a>
   <a class="item" href="#/glossary"><div class="ico s-gram">📚</div><div style="flex:1"><div class="t">Glossario di grammatica</div><div class="d">Cerca e consulta tutte le strutture</div></div><span class="go">›</span></a>
   <a class="item" href="#/plan"><div class="ico s-exam">🗓️</div><div style="flex:1"><div class="t">Piano di studio</div><div class="d">Obiettivi settimanali fino a dicembre 2027</div></div><span class="go">›</span></a>
   <a class="item" href="#/resources"><div class="ico s-read">🔗</div><div style="flex:1"><div class="t">Risorse</div><div class="d">Link a materiali gratuiti e ufficiali</div></div><span class="go">›</span></a></div>`;

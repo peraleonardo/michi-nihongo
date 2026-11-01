@@ -144,7 +144,7 @@ Q.gen.kana = (script = 'hira', n = 10, mode, groups = ['base', 'daku']) => {
     const base = { sec: 'kana', lv: 'n5', sid: 'kana:' + k, ty: 'kana' };
     if (m === 'k2r') return { ...base, qh: `<div class="kanji-big c">${k}</div>`, q: 'Come si legge?', o: [ro, ...ds.map(x => x[1])], a: 0, e: `${k} = ${ro}` };
     if (m === 'r2k') return { ...base, qh: `<div class="kanji-big c" style="font-family:var(--ui);font-size:64px">${ro}</div>`, q: 'Quale kana è?', o: [k, ...ds.map(x => x[0])], a: 0, e: `${ro} = ${k}` };
-    return { ...base, q: 'Che suono hai sentito?', au: { t: k }, o: [k, ...ds.map(x => x[0])], a: 0, e: `${k} = ${ro}`, tr: k };
+    return { ...base, q: 'Che suono hai sentito?', au: kanaSpec(k), o: [k, ...ds.map(x => x[0])], a: 0, e: `${k} = ${ro}`, tr: k };
   });
 };
 // banca esercizi: file esercizi-nX.json + esercizi delle schede di grammatica
@@ -379,16 +379,17 @@ Q.run = function (items, o = {}) {
     if (o.exam) { document.body.classList.remove('focus'); o.onFinish({ items: st.items.slice(0, real), ans: st.ans, ok, n: real, timeout }); return; }
     const bonus = pct >= 90 ? 20 : pct >= 70 ? 10 : 5; addXP(bonus, true);
     if (real >= 5 && st.wrong.length === 0) { S.flags.perfect = 1; checkBadges(); }
+    const extra = o.onResult ? (o.onResult({ ok, n: real, pct, items: st.items, ans: st.ans, wrong: st.wrong }) || '') : '';
     snd('done'); if (pct >= 70) confetti();
     const wrongs = [...new Map(st.wrong.map(w => [w.sid + w.q, w])).values()];
     view().innerHTML = `<div class="page done"><div class="big">${pct >= 90 ? '🏆' : pct >= 70 ? '🎉' : pct >= 50 ? '👍' : '💪'}</div><h1>${pct >= 90 ? 'Fantastico!' : pct >= 70 ? 'Ottimo lavoro!' : pct >= 50 ? 'Buon inizio!' : 'Non mollare!'}</h1>
-      <p class="mut">${ok} risposte giuste su ${real} · ${pct}%</p>
+      <p class="mut">${ok} risposte giuste su ${real} · ${pct}%</p>${extra}
       <div class="row" style="justify-content:center;gap:12px;margin:14px 0"><div class="stat" style="background:var(--card);box-shadow:var(--sh)"><b>+${ok * 10 + bonus}</b><span>XP</span></div><div class="stat" style="background:var(--card);box-shadow:var(--sh)"><b>${pct}%</b><span>precisione</span></div></div>
       ${wrongs.length ? `<div class="card flat" style="text-align:left"><h3>Da ripassare</h3>${wrongs.slice(0, 6).map(w => `<div class="small" style="padding:6px 0;border-top:1px solid var(--line)">${w.q ? rich(plain(w.q).slice(0, 60)) : ''}${w.e ? `<div class="mut">${rich(String(w.e).split('\n')[0])}</div>` : ''}</div>`).join('')}</div>` : ''}
       <div class="grid2">${wrongs.length ? `<button class="btn" id="rt">Ripassa gli errori</button>` : ''}<button class="btn primary" id="fin" style="${wrongs.length ? '' : 'grid-column:1/3'}">Continua</button></div></div>`;
     document.body.classList.remove('focus'); window.scrollTo(0, 0);
     $('#fin').onclick = () => { if (o.onDone) o.onDone(); else nav(o.back || '#/practice'); };
-    if ($('#rt')) $('#rt').onclick = () => Q.run(wrongs.map(w => ({ ...w, retry: false })), { ...o });
+    if ($('#rt')) $('#rt').onclick = () => Q.run(wrongs.map(w => ({ ...w, retry: false })), { ...o, onResult: null });
   }
   draw();
 };

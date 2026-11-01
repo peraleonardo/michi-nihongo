@@ -3,7 +3,8 @@
 const ROUTES = [
   [/^#\/home$/, () => V.home(), 'home'], [/^#\/study$/, () => V.study(), 'study'], [/^#\/practice$/, () => V.practice(), 'practice'],
   [/^#\/glossary$/, () => V.glossary(), 'glossary'], [/^#\/stats$/, () => V.stats(), 'stats'], [/^#\/settings$/, () => V.settings(), ''],
-  [/^#\/plan$/, () => V.plan(), 'home'], [/^#\/kana$/, () => V.kana(), 'study'], [/^#\/kana\/(hira|kata)$/, m => V.kanaChart(m[1]), 'study'],
+  [/^#\/plan$/, () => V.plan(), 'home'],
+  [/^#\/path(?:\/(n\d))?$/, m => V.path(m[1]), 'path'], [/^#\/p\/([\w-]+)$/, m => V.unit(m[1]), 'path'], [/^#\/p\/([\w-]+)\/(\w+)$/, m => PATH.go(m[1], m[2]), 'path'], [/^#\/pc\/([\w-]+)$/, m => V.checkpoint(m[1]), 'path'], [/^#\/pf\/(n\d)$/, m => V.final(m[1]), 'path'], [/^#\/kana$/, () => V.kana(), 'study'], [/^#\/kana\/(hira|kata)$/, m => V.kanaChart(m[1]), 'study'],
   [/^#\/kanji\/(n\d)$/, m => V.kanjiList(m[1]), 'study'], [/^#\/vocab\/(n\d)$/, m => V.vocabList(m[1]), 'study'],
   [/^#\/srs\/(all|kanji|vocab)\/(all|n\d)(\/more)?$/, m => V.srs(m[1], m[2], !!m[3]), 'study'],
   [/^#\/gram\/(n\d)$/, m => V.gramList(m[1]), 'study'], [/^#\/g\/(.+)$/, m => V.gramDetail(decodeURIComponent(m[1])), 'study'],
@@ -14,6 +15,7 @@ const ROUTES = [
 function nav(h) { if (location.hash === h) render(); else location.hash = h; }
 function render() {
   const h = location.hash || '#/home';
+  if (!/^#\/(g|t|d|ex|p)\//.test(h)) PATH.from = null;
   document.body.classList.remove('focus'); AU.stop(); AU.specs.length = 0; closeSheet();
   let tab = 'home';
   try {
@@ -62,5 +64,6 @@ function registerSW() {
   try { await loadData(); } catch (e) { console.error(e); }
   // assegna le voci ai dialoghi (A = femminile, B = maschile, salvo indicazione)
   LEVELS.forEach(l => ((DB.asc[l] || {}).dialoghi || []).forEach(d => d.righe.forEach(x => { if (!x.g) x.g = (d.v && d.v[x.s]) || (x.s === 'A' ? 'F' : 'M'); })));
+  PATH.init();
   checkBadges(); render(); registerSW();
 })();

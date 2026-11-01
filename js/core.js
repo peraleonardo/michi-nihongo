@@ -1,6 +1,6 @@
 'use strict';
 /* Nucleo: utilità, storage, XP/serie/badge, SRS, caricamento dati, furigana */
-const APP_VERSION = '2.3.0'; // tienila uguale a VERSION in sw.js
+const APP_VERSION = '2.5.0'; // tienila uguale a VERSION in sw.js
 const LEVELS = ['n5', 'n4', 'n3'];
 const LV = { n5: 'N5', n4: 'N4', n3: 'N3' };
 const SEC = {
@@ -26,7 +26,7 @@ const KANJI_RE = /[一-鿿々]/;
 /* ---------- storage ---------- */
 const KEY = 'michi.v1';
 const DEF = () => ({
-  v: 1, xp: 0, days: {}, srs: {}, items: {}, stats: {}, badges: {}, read: {}, gram: {}, exams: [], meta: { nt: {} }, flags: {},
+  v: 1, xp: 0, days: {}, srs: {}, items: {}, stats: {}, badges: {}, read: {}, gram: {}, exams: [], meta: { nt: {} }, flags: {}, path: { u: {}, cp: {}, fin: {}, open: {} },
   set: { furi: 'always', theme: 'auto', goal: 50, newPerDay: 10, rate: 1, voiceF: '', voiceM: '', sounds: true, levels: ['n5'], cur: 'n5', examDate: '2027-12-05', planStart: today(), trans: true, romaji: true, showRomaji: true }
 });
 let S = DEF(), saveT = 0, memOnly = false;
@@ -120,11 +120,11 @@ function deckStats(sec, lv) {
 function totalDue() { let n = 0; for (const lv of LEVELS) for (const sec of ['kanji', 'vocab']) for (const e of (sec === 'kanji' ? DB.kanji[lv] : DB.vocab[lv])) if (isDue(e.id)) n++; return n; }
 
 /* ---------- dati ---------- */
-const DB = { frasi: {}, elenco: {}, kana: null, strokes: {}, kanji: {}, vocab: {}, gram: {}, testi: {}, asc: {}, es: {}, byId: {}, words: {}, wordIdx: {}, ready: false };
+const DB = { percorso: null, frasi: {}, elenco: {}, kana: null, strokes: {}, kanji: {}, vocab: {}, gram: {}, testi: {}, asc: {}, es: {}, byId: {}, words: {}, wordIdx: {}, ready: false };
 async function loadData() {
   const j = async f => { try { const r = await fetch('data/' + f); return r.ok ? await r.json() : null; } catch (e) { return null; } };
   const [kana, strokes] = await Promise.all([j('kana.json'), j('strokes.json')]);
-  DB.kana = kana; DB.strokes = strokes || {}; DB.elenco = (await j('kanji-elenco.json')) || {}; DB.frasi = (await j('frasi.json')) || {};
+  DB.kana = kana; DB.strokes = strokes || {}; DB.elenco = (await j('kanji-elenco.json')) || {}; DB.percorso = await j('percorso.json'); DB.frasi = (await j('frasi.json')) || {};
   const files = [['kanji', 'kanji'], ['vocab', 'vocabolario'], ['gram', 'grammatica'], ['testi', 'testi'], ['asc', 'ascolto'], ['es', 'esercizi']];
   await Promise.all(LEVELS.flatMap(l => files.map(async ([k, f]) => { const d = await j(`${f}-${l}.json`); DB[k][l] = d || (k === 'asc' ? {} : []); })));
   for (const l of LEVELS) {
