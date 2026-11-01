@@ -1,0 +1,1068 @@
+[
+ {
+  "id": "t-n4-01",
+  "t": "メール",
+  "tipo": "email",
+  "jp": [
+   "{山田|やまだ}/さん/へ",
+   "{今日|きょう}/は/{熱|ねつ}/が/ある/ので/、/{会社|かいしゃ}/を/{休|やす}みます/。",
+   "{明日|あした}/の/{会議|かいぎ}/には/{出|で}られる/と/{思|おも}います/が/、/もし/{無理|むり}/だったら/{連絡|れんらく}/します/。",
+   "{仕事|しごと}/の/{資料|しりょう}/は/{机|つくえ}/の/{上|うえ}/に/あります/。/すみません/が/、/よろしく/お{願|ねが}いします/。",
+   "{田中|たなか}/より"
+  ],
+  "it": [
+   "Al signor Yamada",
+   "Oggi ho la febbre, quindi mi assento dal lavoro.",
+   "Penso di poter partecipare alla riunione di domani, ma se non ce la faccio ti avviso.",
+   "I documenti di lavoro sono sulla scrivania. Mi dispiace, ma conto su di te.",
+   "Da Tanaka"
+  ],
+  "gl": {
+   "熱": [
+    "ねつ",
+    "febbre"
+   ],
+   "休みます": [
+    "やすみます",
+    "assentarsi"
+   ],
+   "会議": [
+    "かいぎ",
+    "riunione"
+   ],
+   "出られる": [
+    "でられる",
+    "poter partecipare (forma potenziale)"
+   ],
+   "無理": [
+    "むり",
+    "impossibile; troppo"
+   ],
+   "連絡": [
+    "れんらく",
+    "contatto, avviso"
+   ],
+   "資料": [
+    "しりょう",
+    "documenti"
+   ],
+   "仕事": [
+    "しごと",
+    "lavoro"
+   ],
+   "机": [
+    "つくえ",
+    "scrivania"
+   ]
+  },
+  "q": [
+   {
+    "q": "Perché Tanaka non va al lavoro oggi?",
+    "o": [
+     "Ha la febbre",
+     "Ha una riunione",
+     "È in ferie",
+     "Ha perso il treno"
+    ],
+    "a": 0,
+    "e": "「{熱|ねつ}があるので」: ので = siccome."
+   },
+   {
+    "q": "Che cosa pensa della riunione di domani?",
+    "o": [
+     "Pensa di poter partecipare",
+     "È sicuro di non poter venire",
+     "La riunione è annullata",
+     "Ci andrà con Yamada"
+    ],
+    "a": 0,
+    "e": "「{出|で}られると{思|おも}います」: と{思|おも}う + forma potenziale."
+   },
+   {
+    "q": "Dove sono i documenti?",
+    "o": [
+     "Sulla scrivania",
+     "Nell'armadio",
+     "In ufficio",
+     "In borsa"
+    ],
+    "a": 0,
+    "e": "「{机|つくえ}の{上|うえ}にあります」."
+   }
+  ]
+ },
+ {
+  "id": "t-n4-02",
+  "t": "{初|はじ}めての{京都|きょうと}",
+  "tipo": "brano",
+  "jp": [
+   "{先月|せんげつ}/、/{友達|ともだち}/と/{京都|きょうと}/へ/{旅行|りょこう}/に/{行|い}きました/。/{朝|あさ}/{早|はや}く/{起|お}きて/、/{新幹線|しんかんせん}/に/{乗|の}りました/。",
+   "{京都|きょうと}/で/は/{有名|ゆうめい}/な/お{寺|てら}/を/いくつ/も/{見|み}ました/。/{写真|しゃしん}/を/たくさん/{撮|と}ってしまって/、/{帰|かえ}り/に/カメラ/の/{電池|でんち}/が/なくなりました/。",
+   "{夜|よる}/は/{旅館|りょかん}/に/{泊|と}まりました/。/{和室|わしつ}/で/{寝|ね}る/の/は/{初|はじ}めて/で/、/ちょっと/{緊張|きんちょう}/しました/が/、/{楽|たの}しかった/です/。",
+   "{来年|らいねん}/も/また/{行|い}く/つもり/です/。"
+  ],
+  "it": [
+   "Il mese scorso sono andato in viaggio a Kyoto con un amico. Mi sono alzato presto e ho preso lo Shinkansen.",
+   "A Kyoto ho visto diversi templi famosi. Ho fatto così tante foto che, sulla via del ritorno, la batteria della macchina fotografica si è scaricata.",
+   "La sera ho alloggiato in una locanda. Dormire in una stanza in stile giapponese era la prima volta: ero un po' teso, ma mi sono divertito.",
+   "L'anno prossimo ho intenzione di andarci di nuovo."
+  ],
+  "gl": {
+   "先月": [
+    "せんげつ",
+    "il mese scorso"
+   ],
+   "新幹線": [
+    "しんかんせん",
+    "Shinkansen (treno veloce)"
+   ],
+   "有名": [
+    "ゆうめい",
+    "famoso"
+   ],
+   "お寺": [
+    "おてら",
+    "tempio"
+   ],
+   "撮ってしまって": [
+    "とってしまって",
+    "avendo scattato (troppe)"
+   ],
+   "電池": [
+    "でんち",
+    "batteria; pila"
+   ],
+   "旅館": [
+    "りょかん",
+    "locanda giapponese"
+   ],
+   "泊まりました": [
+    "とまりました",
+    "ho alloggiato"
+   ],
+   "和室": [
+    "わしつ",
+    "stanza in stile giapponese"
+   ],
+   "緊張": [
+    "きんちょう",
+    "tensione; nervosismo"
+   ],
+   "来年": [
+    "らいねん",
+    "l'anno prossimo"
+   ]
+  },
+  "q": [
+   {
+    "q": "Con chi è andato a Kyoto?",
+    "o": [
+     "Con un amico",
+     "Con la famiglia",
+     "Da solo",
+     "Con i colleghi"
+    ],
+    "a": 0,
+    "e": "「{友達|ともだち}と{京都|きょうと}へ」."
+   },
+   {
+    "q": "Che cosa è successo alla macchina fotografica?",
+    "o": [
+     "La batteria si è scaricata",
+     "Si è rotta",
+     "L'ha dimenticata",
+     "Gliel'hanno rubata"
+    ],
+    "a": 0,
+    "e": "「{電池|でんち}がなくなりました」: ～てしまって = a furia di scattare foto."
+   },
+   {
+    "q": "Come si è sentito nella stanza in stile giapponese?",
+    "o": [
+     "Un po' teso ma contento",
+     "Molto triste",
+     "Annoiato",
+     "Arrabbiato"
+    ],
+    "a": 0,
+    "e": "「ちょっと{緊張|きんちょう}しましたが、{楽|たの}しかったです」."
+   }
+  ]
+ },
+ {
+  "id": "t-n4-03",
+  "t": "パーティーのお{知|し}らせ",
+  "tipo": "email",
+  "jp": [
+   "{田中|たなか}/さん/へ",
+   "{来週|らいしゅう}/の/{金曜日|きんようび}/に/、/{会社|かいしゃ}/の/みんな/で/パーティー/を/する/ことになりました/。",
+   "{場所|ばしょ}/は/{駅|えき}/の/{近|ちか}く/の/レストラン/で/、/{時間|じかん}/は/{六時|ろくじ}/から/です/。",
+   "{食|た}べられない/{物|もの}/が/あったら/、/{私|わたし}/に/{知|し}らせて/ください/。",
+   "{皆|みな}さん/に/{会|あ}える/の/を/{楽|たの}しみ/に/して/います/。",
+   "{山田|やまだ}/より"
+  ],
+  "it": [
+   "Al signor Tanaka",
+   "Venerdì prossimo è stato deciso di fare una festa con tutti i colleghi.",
+   "Il luogo è un ristorante vicino alla stazione, dalle 18.",
+   "Se c'è qualcosa che non puoi mangiare, fammelo sapere.",
+   "Non vedo l'ora di incontrare tutti.",
+   "Da Yamada"
+  ],
+  "gl": {
+   "金曜日": [
+    "きんようび",
+    "venerdì"
+   ],
+   "場所": [
+    "ばしょ",
+    "luogo"
+   ],
+   "近く": [
+    "ちかく",
+    "vicino"
+   ],
+   "食べられない": [
+    "たべられない",
+    "non poter mangiare"
+   ],
+   "知らせて": [
+    "しらせて",
+    "(forma て di 知らせる) avvisando"
+   ],
+   "楽しみ": [
+    "たのしみ",
+    "attesa piacevole"
+   ],
+   "会える": [
+    "あえる",
+    "poter incontrare"
+   ],
+   "皆さん": [
+    "みなさん",
+    "a tutti voi"
+   ]
+  },
+  "q": [
+   {
+    "q": "Quando si terrà la festa?",
+    "o": [
+     "Venerdì prossimo",
+     "Sabato prossimo",
+     "Oggi",
+     "Domani"
+    ],
+    "a": 0,
+    "e": "「{来週|らいしゅう}の{金曜日|きんようび}」."
+   },
+   {
+    "q": "Dove si farà?",
+    "o": [
+     "In un ristorante vicino alla stazione",
+     "In ufficio",
+     "A casa di Yamada",
+     "In un parco"
+    ],
+    "a": 0,
+    "e": "「{駅|えき}の{近|ちか}くのレストラン」."
+   },
+   {
+    "q": "Che cosa deve comunicare Tanaka?",
+    "o": [
+     "Cibi che non può mangiare",
+     "L'orario in cui arriva",
+     "Chi porta",
+     "Quanto vuole pagare"
+    ],
+    "a": 0,
+    "e": "「{食|た}べられない{物|もの}があったら、{知|し}らせてください」."
+   }
+  ]
+ },
+ {
+  "id": "t-n4-04",
+  "t": "パーティーのお{知|し}らせ",
+  "tipo": "email",
+  "jp": [
+   "{鈴木|すずき}さん/へ",
+   "{来週|らいしゅう}/の/{土曜日|どようび}/に/、/{私|わたし}/の/{家|いえ}/で/{誕生|たんじょう}{日|び}/の/パーティー/を/します/。",
+   "{時間|じかん}/は/{午後|ごご}/{五|ご}{時|じ}/からです/。/{料理|りょうり}/は/{私|わたし}/が/{作|つく}ります/から/、/{飲|の}み{物|もの}/だけ/{持|も}って/きて/ください/。",
+   "{駅|えき}/から/{歩|ある}く/と/{十|じゅう}/{五|ご}{分|ふん}/ぐらい/かかります/。/{迷|まよ}ったら/、/{電話|でんわ}/して/ください/。",
+   "{木村|きむら}/より"
+  ],
+  "it": [
+   "Alla signora Suzuki",
+   "Sabato prossimo faccio una festa di compleanno a casa mia.",
+   "Si inizia alle cinque del pomeriggio. Preparo io il cibo, perciò porta solo qualcosa da bere.",
+   "Dalla stazione a piedi ci vogliono circa quindici minuti. Se ti perdi, telefonami.",
+   "Da Kimura"
+  ],
+  "gl": {
+   "誕生日": [
+    "たんじょうび",
+    "compleanno"
+   ],
+   "パーティー": [
+    "ぱーてぃー",
+    "festa"
+   ],
+   "午後": [
+    "ごご",
+    "pomeriggio"
+   ],
+   "料理": [
+    "りょうり",
+    "cucina; piatti"
+   ],
+   "飲み物": [
+    "のみもの",
+    "bevanda"
+   ],
+   "迷ったら": [
+    "まよったら",
+    "perdersi"
+   ],
+   "電話": [
+    "でんわ",
+    "telefono"
+   ]
+  },
+  "q": [
+   {
+    "q": "Quando si fa la festa?",
+    "o": [
+     "Sabato prossimo",
+     "Domenica prossima",
+     "Questo sabato",
+     "Sabato scorso"
+    ],
+    "a": 0,
+    "e": "「{来週|らいしゅう}の{土曜日|どようび}に」= sabato della settimana prossima."
+   },
+   {
+    "q": "Che cosa deve portare Suzuki?",
+    "o": [
+     "Qualcosa da bere",
+     "Il cibo",
+     "Un regalo",
+     "Nulla"
+    ],
+    "a": 0,
+    "e": "「{飲|の}み{物|もの}だけ{持|も}ってきてください」: だけ = soltanto."
+   },
+   {
+    "q": "Che cosa deve fare Suzuki se si perde?",
+    "o": [
+     "Telefonare a Kimura",
+     "Chiedere alla polizia",
+     "Tornare a casa",
+     "Aspettare alla stazione"
+    ],
+    "a": 0,
+    "e": "「{迷|まよ}ったら、{電話|でんわ}してください」: たら = se."
+   }
+  ]
+ },
+ {
+  "id": "t-n4-05",
+  "t": "{私|わたし}の{町|まち}",
+  "tipo": "brano",
+  "jp": [
+   "{私|わたし}/の/{町|まち}/は/{海|うみ}/の/{近|ちか}く/に/ある/{小|ちい}さな/{町|まち}です/。/{人口|じんこう}/は/{三|さん}/{万|まん}{人|にん}/ぐらいで/、/{静|しず}かで/のんびり/して/います/。",
+   "{夏|なつ}/に/は/、/たくさん/の/{人|ひと}/が/{泳|およ}ぎ/に/{来|き}ます/。/{海|うみ}/で/とれた/{魚|さかな}/は/{新|あたら}しくて/、/とても/おいしいです/。",
+   "でも/、/{電車|でんしゃ}/の/{本数|ほんすう}/が/{少|すく}ない/ので/、/{車|くるま}/が/ない/と/{不便|ふべん}です/。",
+   "それでも/、/{私|わたし}/は/この/{町|まち}/が/{好|す}きです/。/{将来|しょうらい}/も/ここ/で/{暮|く}らしたい/と/{思|おも}って/います/。"
+  ],
+  "it": [
+   "La mia città è piccola e si trova vicino al mare. Ha circa trentamila abitanti ed è tranquilla e rilassata.",
+   "D'estate molte persone vengono a nuotare. Il pesce pescato in mare è fresco e molto buono.",
+   "Però i treni sono pochi, perciò senza auto è scomodo.",
+   "Ciononostante, mi piace questa città. Penso di voler vivere qui anche in futuro."
+  ],
+  "gl": {
+   "町": [
+    "まち",
+    "città"
+   ],
+   "人口": [
+    "じんこう",
+    "popolazione"
+   ],
+   "静かで": [
+    "しずかで",
+    "tranquillo"
+   ],
+   "のんびり": [
+    "のんびり",
+    "rilassato"
+   ],
+   "泳ぎ": [
+    "およぎ",
+    "nuotare"
+   ],
+   "魚": [
+    "さかな",
+    "pesce"
+   ],
+   "本数": [
+    "ほんすう",
+    "numero di corse"
+   ],
+   "不便です": [
+    "ふべんです",
+    "scomodo"
+   ],
+   "将来": [
+    "しょうらい",
+    "futuro"
+   ],
+   "暮らしたい": [
+    "くらしたい",
+    "vivere"
+   ]
+  },
+  "q": [
+   {
+    "q": "Dov'è la città dell'autore?",
+    "o": [
+     "Vicino al mare",
+     "In montagna",
+     "Vicino a Tokyo",
+     "Sul lago"
+    ],
+    "a": 0,
+    "e": "「{海|うみ}の{近|ちか}くにある」."
+   },
+   {
+    "q": "Perché senza auto è scomodo?",
+    "o": [
+     "Ci sono pochi treni",
+     "La città è troppo grande",
+     "Non ci sono negozi",
+     "Le strade sono strette"
+    ],
+    "a": 0,
+    "e": "「{電車|でんしゃ}の{本数|ほんすう}が{少|すく}ないので」."
+   },
+   {
+    "q": "Che cosa pensa l'autore del futuro?",
+    "o": [
+     "Vorrebbe continuare a vivere in città",
+     "Vorrebbe trasferirsi a Tokyo",
+     "Vorrebbe studiare all'estero",
+     "Non ha ancora pensato"
+    ],
+    "a": 0,
+    "e": "「ここで{暮|く}らしたいと{思|おも}っています」."
+   }
+  ]
+ },
+ {
+  "id": "t-n4-06",
+  "t": "{水泳|すいえい}{教室|きょうしつ}のお{知|し}らせ",
+  "tipo": "annuncio",
+  "jp": [
+   "{市民|しみん}/プール/の/{水泳|すいえい}/{教室|きょうしつ}",
+   "{四月|しがつ}/から/、/{子|こ}ども/と/{大人|おとな}/の/ため/の/{水泳|すいえい}/{教室|きょうしつ}/を/{始|はじ}めます/。",
+   "{子|こ}ども/は/{毎週|まいしゅう}/{土曜日|どようび}/の/{午前|ごぜん}/{十|じゅう}{時|じ}/から/{十|じゅう}/{一|いち}{時|じ}/まで/、/{大人|おとな}/は/{毎週|まいしゅう}/{水曜日|すいようび}/の/{夜|よる}/{七|なな}{時|じ}/から/{八|はち}{時|じ}/までです/。",
+   "{料金|りょうきん}/は/{一|いっ}か{月|げつ}/{四|よん}/{千|せん}{円|えん}です/。/{申|もう}し{込|こ}み/は/、/{三月|さんがつ}/{三|さん}/{十|じゅう}/{一|いち}{日|にち}/まで/に/{受付|うけつけ}でして/ください/。",
+   "{水着|みずぎ}/と/タオル/を/{忘|わす}れないで/ください/。"
+  ],
+  "it": [
+   "Corso di nuoto della piscina comunale",
+   "Da aprile iniziamo corsi di nuoto per bambini e adulti.",
+   "I bambini ogni sabato dalle 10 alle 11 del mattino, gli adulti ogni mercoledì dalle 7 alle 8 di sera.",
+   "Il costo è di quattromila yen al mese. Iscriversi alla reception entro il 31 marzo.",
+   "Non dimenticate costume e asciugamano."
+  ],
+  "gl": {
+   "水泳": [
+    "すいえい",
+    "nuoto"
+   ],
+   "教室": [
+    "きょうしつ",
+    "corso"
+   ],
+   "市民": [
+    "しみん",
+    "cittadino"
+   ],
+   "午前": [
+    "ごぜん",
+    "mattina"
+   ],
+   "料金": [
+    "りょうきん",
+    "tariffa"
+   ],
+   "申し込み": [
+    "もうしこみ",
+    "iscrizione"
+   ],
+   "受付でして": [
+    "うけつけでして",
+    "reception"
+   ],
+   "水着": [
+    "みずぎ",
+    "costume da bagno"
+   ],
+   "忘れないで": [
+    "わすれないで",
+    "dimenticare"
+   ]
+  },
+  "q": [
+   {
+    "q": "Quando si tiene il corso per adulti?",
+    "o": [
+     "Il mercoledì sera",
+     "Il sabato mattina",
+     "Ogni giorno",
+     "La domenica pomeriggio"
+    ],
+    "a": 0,
+    "e": "「{大人|おとな}は{毎週|まいしゅう}{水曜日|すいようび}の{夜|よる}{七|なな}{時|じ}から」."
+   },
+   {
+    "q": "Quanto costa il corso al mese?",
+    "o": [
+     "Quattromila yen",
+     "Mille yen",
+     "Settemila yen",
+     "È gratuito"
+    ],
+    "a": 0,
+    "e": "「{料金|りょうきん}は{一|いち}か{月|げつ}{四|よん}{千|せん}{円|えん}」."
+   },
+   {
+    "q": "Entro quando bisogna iscriversi?",
+    "o": [
+     "Entro il 31 marzo",
+     "Entro il 1° aprile",
+     "Entro il 30 aprile",
+     "Il giorno del corso"
+    ],
+    "a": 0,
+    "e": "「{三月|さんがつ}{三|さん}{十|じゅう}{一|いち}{日|にち}までに」."
+   }
+  ]
+ },
+ {
+  "id": "t-n4-07",
+  "t": "{駅|えき}で",
+  "tipo": "dialogo",
+  "jp": [
+   "{旅行|りょこう}{者|しゃ}/：/すみません/、/{京都|きょうと}/へ/{行|い}きたい/んです/が/、/どの/{電車|でんしゃ}/に/{乗|の}れば/いいです/か/。",
+   "{駅員|えきいん}/：/{京都|きょうと}です/か/。/この/{電車|でんしゃ}/で/{名古屋|なごや}/まで/{行|い}って/、/そこで/{新幹線|しんかんせん}/に/{乗|の}り{換|か}えて/ください/。",
+   "{旅行|りょこう}{者|しゃ}/：/{名古屋|なごや}/まで/どの/ぐらい/かかります/か/。",
+   "{駅員|えきいん}/：/{一|いち}{時間|じかん}/ぐらいです/。/{次|つぎ}/の/{電車|でんしゃ}/は/{十分|じゅっぷん}{後|ご}/に/{出|で}ます/から/、/{急|いそ}いだ/ほう/が/いいです/よ/。",
+   "{旅行|りょこう}{者|しゃ}/：/ありがとうございます/。/{助|たす}かりました/。"
+  ],
+  "it": [
+   "Viaggiatore: Scusi, vorrei andare a Kyoto: che treno devo prendere?",
+   "Addetto: Kyoto? Con questo treno vada fino a Nagoya e lì cambi con lo Shinkansen.",
+   "Viaggiatore: Quanto ci vuole fino a Nagoya?",
+   "Addetto: Circa un'ora. Il prossimo treno parte tra dieci minuti, quindi è meglio sbrigarsi.",
+   "Viaggiatore: Grazie mille. Mi è stato di grande aiuto."
+  ],
+  "gl": {
+   "旅行者": [
+    "りょこうしゃ",
+    "viaggiatore"
+   ],
+   "駅員": [
+    "えきいん",
+    "addetto di stazione"
+   ],
+   "乗れば": [
+    "のれば",
+    "salire (su un mezzo)"
+   ],
+   "乗り換えて": [
+    "のりかえて",
+    "cambiare (treno)"
+   ],
+   "新幹線": [
+    "しんかんせん",
+    "Shinkansen"
+   ],
+   "ぐらい": [
+    "ぐらい",
+    "circa"
+   ],
+   "急いだ": [
+    "いそいだ",
+    "sbrigarsi"
+   ],
+   "助かりました": [
+    "たすかりました",
+    "essere di aiuto"
+   ]
+  },
+  "q": [
+   {
+    "q": "Dove vuole andare il viaggiatore?",
+    "o": [
+     "A Kyoto",
+     "A Nagoya",
+     "A Tokyo",
+     "A Osaka"
+    ],
+    "a": 0,
+    "e": "「{京都|きょうと}へ{行|い}きたい」."
+   },
+   {
+    "q": "Dove deve cambiare treno?",
+    "o": [
+     "A Nagoya",
+     "A Kyoto",
+     "In questa stazione",
+     "A Tokyo"
+    ],
+    "a": 0,
+    "e": "「{名古屋|なごや}で{新幹線|しんかんせん}に{乗|の}り{換|か}えてください」."
+   },
+   {
+    "q": "Quando parte il prossimo treno?",
+    "o": [
+     "Fra dieci minuti",
+     "Fra un'ora",
+     "Subito",
+     "Fra mezz'ora"
+    ],
+    "a": 0,
+    "e": "「{次|つぎ}の{電車|でんしゃ}は{十|じゅう}{分|ふん}{後|ご}に{出|で}ます」."
+   }
+  ]
+ },
+ {
+  "id": "t-n4-08",
+  "t": "{旅行|りょこう}の{思|おも}い{出|で}",
+  "tipo": "brano",
+  "jp": [
+   "{去年|きょねん}/の/{夏|なつ}/、/{友達|ともだち}/と/{二人|ふたり}/で/{北海道|ほっかいどう}/へ/{行|い}きました/。/{飛行機|ひこうき}/で/{二|に}{時間|じかん}/ぐらいでした/。",
+   "{北海道|ほっかいどう}/は/{東京|とうきょう}/より/{涼|すず}しくて/、/{空気|くうき}/も/きれいでした/。/{広|ひろ}い/{畑|はたけ}/の/{中|なか}/を/、/{自転車|じてんしゃ}/で/{走|はし}りました/。",
+   "{夜|よる}/は/、/{有名|ゆうめい}な/カニ/を/{食|た}べました/。/{生|う}まれて/{初|はじ}めて/{食|た}べました/が/、/とても/おいしかったです/。",
+   "また/{行|い}きたい/と/{思|おも}います/が/、/{次|つぎ}/は/{冬|ふゆ}/に/{行|い}って/みたいです/。/{雪|ゆき}/を/{見|み}た/こと/が/ありません/から/。"
+  ],
+  "it": [
+   "L'estate scorsa sono andato in Hokkaido con un amico. In aereo ci sono volute circa due ore.",
+   "Hokkaido era più fresca di Tokyo e anche l'aria era pulita. Ho pedalato in bicicletta tra vasti campi.",
+   "La sera ho mangiato il famoso granchio. Era la prima volta in vita mia, ed era buonissimo.",
+   "Vorrei tornarci, ma la prossima volta vorrei provare ad andarci in inverno. Perché non ho mai visto la neve."
+  ],
+  "gl": {
+   "北海道": [
+    "ほっかいどう",
+    "Hokkaido"
+   ],
+   "飛行機": [
+    "ひこうき",
+    "aereo"
+   ],
+   "涼しくて": [
+    "すずしくて",
+    "fresco"
+   ],
+   "空気": [
+    "くうき",
+    "aria"
+   ],
+   "畑": [
+    "はたけ",
+    "campo coltivato"
+   ],
+   "自転車": [
+    "じてんしゃ",
+    "bicicletta"
+   ],
+   "走りました": [
+    "はしりました",
+    "correre; pedalare"
+   ],
+   "有名な": [
+    "ゆうめいな",
+    "famoso"
+   ],
+   "初めて": [
+    "はじめて",
+    "per la prima volta"
+   ],
+   "雪": [
+    "ゆき",
+    "neve"
+   ]
+  },
+  "q": [
+   {
+    "q": "Con chi è andato in Hokkaido l'autore?",
+    "o": [
+     "Con un amico",
+     "Con la famiglia",
+     "Da solo",
+     "Con i colleghi"
+    ],
+    "a": 0,
+    "e": "「{友達|ともだち}と{二|に}{人|にん}で」."
+   },
+   {
+    "q": "Come ha girato tra i campi?",
+    "o": [
+     "In bicicletta",
+     "In auto",
+     "A piedi",
+     "In autobus"
+    ],
+    "a": 0,
+    "e": "「{自転車|じてんしゃ}で{走|はし}りました」."
+   },
+   {
+    "q": "Quando vorrebbe tornarci?",
+    "o": [
+     "In inverno",
+     "In estate",
+     "In primavera",
+     "In autunno"
+    ],
+    "a": 0,
+    "e": "「{次|つぎ}は{冬|ふゆ}に{行|い}ってみたいです」."
+   }
+  ]
+ },
+ {
+  "id": "t-n4-09",
+  "t": "{旅行|りょこう}の{相談|そうだん}",
+  "tipo": "email",
+  "jp": [
+   "{田中|たなか}さん/へ",
+   "{来月|らいげつ}/、/{家族|かぞく}/と/{京都|きょうと}/へ/{旅行|りょこう}/に/{行|い}く/こと/に/しました/。/{田中|たなか}さん/は/{京都|きょうと}/に/{住|す}んで/いた/こと/が/あります/よ/ね/。",
+   "おすすめ/の/お{寺|てら}/や/、/おいしい/レストラン/を/{教|おし}えて/いた/だけません/か/。",
+   "お/{返事|へんじ}/は/{急|いそ}ぎません/ので/、/{時間|じかん}/が/ある/とき/に/お{願|ねが}い/します/。",
+   "{山本|やまもと}/より"
+  ],
+  "it": [
+   "Al signor Tanaka",
+   "Il mese prossimo ho deciso di andare in viaggio a Kyoto con la famiglia. Lei ha abitato a Kyoto, vero?",
+   "Potrebbe consigliarmi qualche tempio o un buon ristorante?",
+   "Non ho fretta per la risposta, quindi la prego di rispondere quando ha tempo.",
+   "Da Yamamoto"
+  ],
+  "gl": {
+   "旅行": [
+    "りょこう",
+    "viaggio"
+   ],
+   "住んで": [
+    "すんで",
+    "abitare"
+   ],
+   "おすすめ": [
+    "おすすめ",
+    "consigliato"
+   ],
+   "お寺": [
+    "おてら",
+    "tempio"
+   ],
+   "教えて": [
+    "おしえて",
+    "insegnare; dire"
+   ],
+   "返事": [
+    "へんじ",
+    "risposta"
+   ],
+   "急ぎません": [
+    "いそぎません",
+    "avere fretta"
+   ]
+  },
+  "q": [
+   {
+    "q": "Dove va in viaggio Yamamoto?",
+    "o": [
+     "A Kyoto",
+     "A Tokyo",
+     "A Osaka",
+     "In Hokkaido"
+    ],
+    "a": 0,
+    "e": "「{京都|きょうと}へ{旅行|りょこう}に{行|い}く」."
+   },
+   {
+    "q": "Che cosa chiede a Tanaka?",
+    "o": [
+     "Templi e ristoranti consigliati",
+     "Il prezzo dell'albergo",
+     "Un passaggio in auto",
+     "L'orario dei treni"
+    ],
+    "a": 0,
+    "e": "「おすすめのお{寺|てら}や、おいしいレストランを{教|おし}えて」."
+   },
+   {
+    "q": "Quando può rispondere Tanaka?",
+    "o": [
+     "Quando ha tempo",
+     "Entro oggi",
+     "Entro domani",
+     "Subito"
+    ],
+    "a": 0,
+    "e": "「{時間|じかん}があるときに」."
+   }
+  ]
+ },
+ {
+  "id": "t-n4-10",
+  "t": "{私|わたし}の{一|いち}{日|にち}",
+  "tipo": "brano",
+  "jp": [
+   "{私|わたし}/は/{毎朝|まいあさ}/{六|ろく}{時|じ}/に/{起|お}きます/。/まず/{顔|かお}/を/{洗|あら}って/、/{朝|あさ}/ご{飯|はん}/を/{食|た}べます/。",
+   "{七|なな}{時|じ}/に/{家|いえ}/を/{出|で}て/、/{電車|でんしゃ}/で/{会社|かいしゃ}/へ/{行|い}きます/。/{電車|でんしゃ}/の/{中|なか}/で/は/、/いつも/{音楽|おんがく}/を/{聞|き}いて/います/。",
+   "{仕事|しごと}/は/{九|きゅう}{時|じ}/から/{五|ご}{時|じ}/までです/。/{昼休|ひるやす}み/に/は/、/{同僚|どうりょう}/と/{一緒|いっしょ}/に/{食堂|しょくどう}/で/{昼|ひる}/ご{飯|はん}/を/{食|た}べます/。",
+   "{夜|よる}/は/、/{家|いえ}/で/{料理|りょうり}/を/して/、/テレビ/を/{見|み}て/から/{寝|ね}ます/。"
+  ],
+  "it": [
+   "Mi alzo ogni mattina alle sei. Prima mi lavo il viso e faccio colazione.",
+   "Alle sette esco di casa e vado in ufficio in treno. In treno ascolto sempre musica.",
+   "Il lavoro va dalle nove alle cinque. Nella pausa pranzo mangio alla mensa con i colleghi.",
+   "La sera cucino a casa e dopo aver guardato la televisione vado a dormire."
+  ],
+  "gl": {
+   "起きます": [
+    "おきます",
+    "alzarsi"
+   ],
+   "顔": [
+    "かお",
+    "viso"
+   ],
+   "洗って": [
+    "あらって",
+    "lavare"
+   ],
+   "電車": [
+    "でんしゃ",
+    "treno"
+   ],
+   "音楽": [
+    "おんがく",
+    "musica"
+   ],
+   "同僚": [
+    "どうりょう",
+    "collega"
+   ],
+   "食堂": [
+    "しょくどう",
+    "mensa"
+   ],
+   "料理": [
+    "りょうり",
+    "cucinare"
+   ],
+   "寝ます": [
+    "ねます",
+    "dormire"
+   ]
+  },
+  "q": [
+   {
+    "q": "A che ora si alza l'autore?",
+    "o": [
+     "Alle sei",
+     "Alle sette",
+     "Alle otto",
+     "Alle cinque"
+    ],
+    "a": 0,
+    "e": "「{毎朝|まいあさ}{六|ろく}{時|じ}に{起|お}きます」."
+   },
+   {
+    "q": "Che cosa fa in treno?",
+    "o": [
+     "Ascolta musica",
+     "Legge un libro",
+     "Dorme",
+     "Studia"
+    ],
+    "a": 0,
+    "e": "「{音楽|おんがく}を{聞|き}いています」."
+   },
+   {
+    "q": "Con chi pranza?",
+    "o": [
+     "Con i colleghi",
+     "Da solo",
+     "Con la famiglia",
+     "Con gli amici"
+    ],
+    "a": 0,
+    "e": "「{同僚|どうりょう}と{一緒|いっしょ}に」."
+   }
+  ]
+ },
+ {
+  "id": "t-n4-11",
+  "t": "お{店|みせ}のお{知|し}らせ",
+  "tipo": "annuncio",
+  "jp": [
+   "ご/{来店|らいてん}/の/お{客様|きゃくさま}/へ",
+   "いつも/ご/{利用|りよう}/いただき/、/ありがとうございます/。",
+   "{来週|らいしゅう}/の/{月曜日|げつようび}/は/、/{店|みせ}/の/{工事|こうじ}/の/ため/、/{一|いち}{日|にち}/お/{休|やす}み/させて/いただきます/。/{火曜日|かようび}/から/は/、/いつも/どおり/{朝|あさ}/{十|じゅう}{時|じ}/に/{開|ひら}きます/。",
+   "ご/{迷惑|めいわく}/を/おかけ/します/が/、/よろしく/お{願|ねが}い/いたします/。"
+  ],
+  "it": [
+   "Ai clienti del negozio",
+   "Grazie di essere sempre nostri clienti.",
+   "Lunedì della settimana prossima il negozio resterà chiuso tutto il giorno per lavori. Da martedì apriremo come al solito alle dieci del mattino.",
+   "Ci scusiamo per il disagio e vi ringraziamo per la comprensione."
+  ],
+  "gl": {
+   "来店": [
+    "らいてん",
+    "visita al negozio"
+   ],
+   "利用": [
+    "りよう",
+    "uso"
+   ],
+   "工事": [
+    "こうじ",
+    "lavori"
+   ],
+   "休み": [
+    "やすみ",
+    "riposare; chiudere"
+   ],
+   "迷惑": [
+    "めいわく",
+    "disturbo"
+   ],
+   "開きます": [
+    "ひらきます",
+    "aprire"
+   ]
+  },
+  "q": [
+   {
+    "q": "Perché il negozio chiude lunedì?",
+    "o": [
+     "Per dei lavori",
+     "Per le ferie",
+     "Per un'ispezione",
+     "Per mancanza di personale"
+    ],
+    "a": 0,
+    "e": "「{店|みせ}の{工事|こうじ}のため」."
+   },
+   {
+    "q": "Quando riapre?",
+    "o": [
+     "Martedì alle dieci",
+     "Lunedì alle dieci",
+     "Martedì alle nove",
+     "Mercoledì"
+    ],
+    "a": 0,
+    "e": "「{火曜日|かようび}からは…{朝|あさ}{十|じゅう}{時|じ}に{開|ひら}きます」."
+   },
+   {
+    "q": "Per quanto tempo resta chiuso?",
+    "o": [
+     "Un giorno",
+     "Una settimana",
+     "Due giorni",
+     "Un mese"
+    ],
+    "a": 0,
+    "e": "「{一|いち}{日|にち}お{休|やす}み」."
+   }
+  ]
+ },
+ {
+  "id": "t-n4-12",
+  "t": "レストランの{注文|ちゅうもん}",
+  "tipo": "dialogo",
+  "jp": [
+   "{店員|てんいん}/：/いらっしゃいませ/。/ご/{注文|ちゅうもん}/は/お{決|き}まりです/か/。",
+   "{客|きゃく}/：/はい/、/ハンバーグ/{定食|ていしょく}/を/ください/。/{飲|の}み{物|もの}/は/、/コーヒー/を/お{願|ねが}い/します/。",
+   "{店員|てんいん}/：/コーヒー/は/{食事|しょくじ}/の/{後|あと}/で/よろしいです/か/。",
+   "{客|きゃく}/：/いいえ/、/{先|さき}/に/お{願|ねが}い/します/。"
+  ],
+  "it": [
+   "Cameriere: Benvenuti. Avete deciso cosa ordinare?",
+   "Cliente: Sì, un set con hamburger, per favore. Come bevanda, un caffè.",
+   "Cameriere: Il caffè lo porto dopo il pasto, va bene?",
+   "Cliente: No, lo porti prima, per favore."
+  ],
+  "gl": {
+   "注文": [
+    "ちゅうもん",
+    "ordinazione"
+   ],
+   "お決まりです": [
+    "おきまりです",
+    "essere deciso"
+   ],
+   "定食": [
+    "ていしょく",
+    "menù fisso"
+   ],
+   "飲み物": [
+    "のみもの",
+    "bevanda"
+   ],
+   "食事": [
+    "しょくじ",
+    "pasto"
+   ],
+   "後": [
+    "のち",
+    "dopo"
+   ],
+   "先": [
+    "さき",
+    "prima"
+   ]
+  },
+  "q": [
+   {
+    "q": "Che cosa ordina il cliente?",
+    "o": [
+     "Un set con hamburger e caffè",
+     "Un set con pesce e tè",
+     "Solo un caffè",
+     "Una pizza"
+    ],
+    "a": 0,
+    "e": "「ハンバーグ{定食|ていしょく}」「コーヒー」."
+   },
+   {
+    "q": "Quando porta il caffè il cameriere?",
+    "o": [
+     "Dopo il pasto, se il cliente non dice altro",
+     "Subito",
+     "Mai",
+     "Con il dolce"
+    ],
+    "a": 0,
+    "e": "{店員|てんいん}は「{食事|しょくじ}の{後|のち}で」と{聞|き}きます."
+   },
+   {
+    "q": "Che cosa risponde il cliente?",
+    "o": [
+     "Lo vuole prima",
+     "Lo vuole dopo",
+     "Non lo vuole",
+     "Vuole il tè"
+    ],
+    "a": 0,
+    "e": "「{先|さき}にお{願|ねが}いします」."
+   }
+  ]
+ }
+]

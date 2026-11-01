@@ -1,0 +1,789 @@
+{
+ "dialoghi": [
+  {
+   "id": "dlg-n4-01",
+   "t": "{予約|よやく}",
+   "v": {
+    "A": "F",
+    "B": "M"
+   },
+   "righe": [
+    {
+     "s": "A",
+     "t": "もしもし、{来週|らいしゅう}の{月曜日|げつようび}に{予約|よやく}したいです。",
+     "i": "Pronto, vorrei prenotare per lunedì prossimo."
+    },
+    {
+     "s": "B",
+     "t": "{月曜日|げつようび}ですね。{午前|ごぜん}と{午後|ごご}、どちらがいいですか。",
+     "i": "Lunedì, vero? Mattina o pomeriggio, quale preferisce?"
+    },
+    {
+     "s": "A",
+     "t": "{午後|ごご}がいいです。{三時|さんじ}ごろはどうですか。",
+     "i": "Il pomeriggio. Che ne dice verso le tre?"
+    },
+    {
+     "s": "B",
+     "t": "はい、{大丈夫|だいじょうぶ}です。お{名前|なまえ}をお{願|ねが}いします。",
+     "i": "Sì, va bene. Il suo nome, per favore."
+    }
+   ],
+   "q": [
+    {
+     "q": "Quando vuole prenotare la donna?",
+     "o": [
+      "Lunedì prossimo pomeriggio",
+      "Lunedì prossimo mattina",
+      "Domenica pomeriggio",
+      "Oggi alle tre"
+     ],
+     "a": 0,
+     "e": "「{来週|らいしゅう}の{月曜日|げつようび}」+「{午後|ごご}がいい」."
+    },
+    {
+     "q": "Verso che ora?",
+     "o": [
+      "Verso le 3",
+      "Verso le 4",
+      "Verso le 9",
+      "Verso le 7"
+     ],
+     "a": 0,
+     "e": "「{三時|さんじ}ごろ」: ごろ = verso."
+    }
+   ]
+  },
+  {
+   "id": "dlg-n4-02",
+   "t": "{乗|の}り{換|か}え",
+   "v": {
+    "A": "F",
+    "B": "M"
+   },
+   "righe": [
+    {
+     "s": "A",
+     "t": "すみません、{東京駅|とうきょうえき}へ{行|い}きたいんですが、どう{行|い}けばいいですか。",
+     "i": "Scusi, vorrei andare alla stazione di Tokyo: come devo fare?"
+    },
+    {
+     "s": "B",
+     "t": "{次|つぎ}の{駅|えき}で{乗|の}り{換|か}えてください。{三番線|さんばんせん}の{電車|でんしゃ}です。",
+     "i": "Cambi alla prossima stazione. È il treno del binario 3."
+    },
+    {
+     "s": "A",
+     "t": "{乗|の}り{換|か}えて、{何分|なんぷん}ぐらいかかりますか。",
+     "i": "Dopo il cambio, quanto ci vuole?"
+    },
+    {
+     "s": "B",
+     "t": "{二十分|にじゅっぷん}ぐらいです。",
+     "i": "Circa venti minuti."
+    }
+   ],
+   "q": [
+    {
+     "q": "Dove deve cambiare treno?",
+     "o": [
+      "Alla prossima stazione",
+      "Alla stazione di Tokyo",
+      "Al capolinea",
+      "Non deve cambiare"
+     ],
+     "a": 0,
+     "e": "「{次|つぎ}の{駅|えき}で{乗|の}り{換|か}えて」."
+    },
+    {
+     "q": "Quanto tempo ci vuole dopo il cambio?",
+     "o": [
+      "Circa 20 minuti",
+      "Circa 10 minuti",
+      "Circa 30 minuti",
+      "Circa 2 ore"
+     ],
+     "a": 0,
+     "e": "「{二十分|にじゅっぷん}ぐらい」: attenzione, 20 minuti = にじゅっぷん."
+    }
+   ]
+  },
+  {
+   "id": "dlg-n4-03",
+   "t": "ホテルで",
+   "v": {
+    "A": "F",
+    "B": "M"
+   },
+   "righe": [
+    {
+     "s": "A",
+     "t": "{予約|よやく}をしておいた{山田|やまだ}です。",
+     "i": "Sono Yamada, avevo prenotato."
+    },
+    {
+     "s": "B",
+     "t": "{山田|やまだ}さんですね。{二|ふた}つの{部屋|へや}ですか。",
+     "i": "Signor Yamada, certo. Sono due camere?"
+    },
+    {
+     "s": "A",
+     "t": "いいえ、{一部屋|ひとへや}です。{二日|ふつか}{泊|と}まります。",
+     "i": "No, una camera. Mi fermo due notti."
+    },
+    {
+     "s": "B",
+     "t": "かしこまりました。{朝|あさ}ご{飯|はん}は{七時|しちじ}からです。",
+     "i": "Perfetto. La colazione è dalle sette."
+    }
+   ],
+   "q": [
+    {
+     "q": "Quante camere ha prenotato?",
+     "o": [
+      "Una",
+      "Due",
+      "Tre",
+      "Quattro"
+     ],
+     "a": 0,
+     "e": "「{一部屋|ひとへや}です」: il ricevente ne aveva ipotizzate due, ma lui corregge."
+    },
+    {
+     "q": "Quante notti si ferma?",
+     "o": [
+      "Due",
+      "Una",
+      "Tre",
+      "Sette"
+     ],
+     "a": 0,
+     "e": "「{二日|ふつか}{泊|と}まります」."
+    }
+   ]
+  },
+  {
+   "id": "dlg-n4-04",
+   "t": "{病院|びょういん}で",
+   "v": {
+    "A": "F",
+    "B": "M"
+   },
+   "righe": [
+    {
+     "s": "A",
+     "t": "{今日|きょう}はどうされましたか。",
+     "i": "Che cosa la porta qui oggi?"
+    },
+    {
+     "s": "B",
+     "t": "{昨日|きのう}から{頭|あたま}が{痛|いた}くて、{熱|ねつ}もあるんです。",
+     "i": "Da ieri ho mal di testa e anche la febbre."
+    },
+    {
+     "s": "A",
+     "t": "それは{大変|たいへん}ですね。{薬|くすり}は{飲|の}みましたか。",
+     "i": "Mi dispiace. Ha preso delle medicine?"
+    },
+    {
+     "s": "B",
+     "t": "いいえ、まだ{飲|の}んでいません。",
+     "i": "No, non ne ho ancora prese."
+    },
+    {
+     "s": "A",
+     "t": "では、{先|さき}に{熱|ねつ}を{測|はか}りましょう。",
+     "i": "Allora misuriamo prima la febbre."
+    }
+   ],
+   "q": [
+    {
+     "q": "Che sintomi ha l'uomo?",
+     "o": [
+      "Mal di testa e febbre",
+      "Mal di pancia",
+      "Tosse e raffreddore",
+      "Mal di denti"
+     ],
+     "a": 0,
+     "e": "「{頭|あたま}が{痛|いた}くて、{熱|ねつ}もある」."
+    },
+    {
+     "q": "Ha già preso delle medicine?",
+     "o": [
+      "No",
+      "Sì, due volte",
+      "Sì, ieri",
+      "Non lo dice"
+     ],
+     "a": 0,
+     "e": "「まだ{飲|の}んでいません」: まだ〜ていません = non ancora."
+    }
+   ]
+  },
+  {
+   "id": "dlg-n4-05",
+   "t": "{買|か}い{物|もの}",
+   "v": {
+    "A": "F",
+    "B": "M"
+   },
+   "righe": [
+    {
+     "s": "A",
+     "t": "このシャツ、もう{少|すこ}し{大|おお}きいのはありますか。",
+     "i": "Questa camicia, ne avete una un po' più grande?"
+    },
+    {
+     "s": "B",
+     "t": "はい、ございます。{色|いろ}は{白|しろ}と{青|あお}がありますが。",
+     "i": "Sì, certo. I colori sono bianco e blu."
+    },
+    {
+     "s": "A",
+     "t": "{青|あお}がいいです。{試|ため}してみてもいいですか。",
+     "i": "Preferisco il blu. Posso provarla?"
+    },
+    {
+     "s": "B",
+     "t": "どうぞ。あちらでお{試|ため}しください。",
+     "i": "Prego. La provi laggiù."
+    },
+    {
+     "s": "A",
+     "t": "ちょうどいいです。これをください。",
+     "i": "Mi va benissimo. Prendo questa."
+    }
+   ],
+   "q": [
+    {
+     "q": "Che cosa cerca la donna?",
+     "o": [
+      "Una camicia più grande",
+      "Una camicia più piccola",
+      "Un paio di scarpe",
+      "Un cappello"
+     ],
+     "a": 0,
+     "e": "「もう{少|すこ}し{大|おお}きいの」."
+    },
+    {
+     "q": "Di che colore la prende?",
+     "o": [
+      "Blu",
+      "Bianco",
+      "Rosso",
+      "Nero"
+     ],
+     "a": 0,
+     "e": "「{青|あお}がいいです」."
+    }
+   ]
+  },
+  {
+   "id": "dlg-n4-06",
+   "t": "{週末|しゅうまつ}の{予定|よてい}",
+   "v": {
+    "A": "F",
+    "B": "M"
+   },
+   "righe": [
+    {
+     "s": "A",
+     "t": "{今度|こんど}の{週末|しゅうまつ}、{何|なに}か{予定|よてい}がありますか。",
+     "i": "Questo fine settimana hai programmi?"
+    },
+    {
+     "s": "B",
+     "t": "{土曜日|どようび}は{友達|ともだち}と{映画|えいが}を{見|み}に{行|い}きます。{日曜日|にちようび}は{家|いえ}で{掃除|そうじ}をする{予定|よてい}です。",
+     "i": "Sabato vado al cinema con un amico. Domenica ho in programma di pulire casa."
+    },
+    {
+     "s": "A",
+     "t": "そうですか。{実|じつ}は、{日曜日|にちようび}に{山|やま}へ{行|い}こうと{思|おも}っていたんですが。",
+     "i": "Capisco. A dire il vero pensavo di andare in montagna domenica."
+    },
+    {
+     "s": "B",
+     "t": "いいですね。{掃除|そうじ}は{来週|らいしゅう}にしますから、{一緒|いっしょ}に{行|い}きましょう。",
+     "i": "Bello. Pulirò la settimana prossima, quindi andiamo insieme."
+    }
+   ],
+   "q": [
+    {
+     "q": "Che cosa fa l'uomo sabato?",
+     "o": [
+      "Va al cinema con un amico",
+      "Va in montagna",
+      "Pulisce casa",
+      "Lavora"
+     ],
+     "a": 0,
+     "e": "「{土曜日|どようび}は{友達|ともだち}と{映画|えいが}を{見|み}に{行|い}きます」."
+    },
+    {
+     "q": "Che cosa decide per domenica?",
+     "o": [
+      "Di andare in montagna insieme",
+      "Di pulire casa",
+      "Di restare a casa",
+      "Di andare al cinema"
+     ],
+     "a": 0,
+     "e": "「{一緒|いっしょ}に{行|い}きましょう」."
+    }
+   ]
+  },
+  {
+   "id": "dlg-n4-07",
+   "t": "{電話|でんわ}",
+   "v": {
+    "A": "F",
+    "B": "M"
+   },
+   "righe": [
+    {
+     "s": "A",
+     "t": "もしもし、{山田|やまだ}さんをお{願|ねが}いします。",
+     "i": "Pronto, vorrei parlare con il signor Yamada."
+    },
+    {
+     "s": "B",
+     "t": "{申|もう}し{訳|わけ}ありません。{山田|やまだ}は{今|いま}、{出|で}かけております。",
+     "i": "Mi dispiace. Yamada è appena uscito."
+    },
+    {
+     "s": "A",
+     "t": "{何|なん}{時|じ}ごろ{戻|もど}りますか。",
+     "i": "Verso che ora torna?"
+    },
+    {
+     "s": "B",
+     "t": "{三|さん}{時|じ}には{戻|もど}ると{思|おも}います。{戻|もど}ったら、{電話|でんわ}させましょうか。",
+     "i": "Penso che sarà di ritorno per le tre. Quando torna, gli faccio telefonare?"
+    },
+    {
+     "s": "A",
+     "t": "はい、お{願|ねが}いします。{私|わたし}は{田中|たなか}です。",
+     "i": "Sì, grazie. Sono Tanaka."
+    }
+   ],
+   "q": [
+    {
+     "q": "Perché Yamada non risponde?",
+     "o": [
+      "È uscito",
+      "È in riunione",
+      "È in ferie",
+      "È malato"
+     ],
+     "a": 0,
+     "e": "「{出|で}かけております」."
+    },
+    {
+     "q": "Che cosa chiede la donna?",
+     "o": [
+      "Che Yamada la richiami",
+      "Di lasciare un messaggio scritto",
+      "Di richiamare lei più tardi",
+      "Di non fare nulla"
+     ],
+     "a": 0,
+     "e": "「{電話|でんわ}させましょうか」「はい、お{願|ねが}いします」."
+    }
+   ]
+  },
+  {
+   "id": "dlg-n4-08",
+   "t": "{道|みち}を{聞|き}く",
+   "v": {
+    "A": "F",
+    "B": "M"
+   },
+   "righe": [
+    {
+     "s": "A",
+     "t": "すみません、{郵便|ゆうびん}{局|きょく}はどこですか。",
+     "i": "Scusi, dov'è l'ufficio postale?"
+    },
+    {
+     "s": "B",
+     "t": "この{道|みち}をまっすぐ{行|い}って、{二|ふた}つ{目|め}の{信号|しんごう}を{右|みぎ}に{曲|ま}がってください。",
+     "i": "Vada dritto per questa strada e giri a destra al secondo semaforo."
+    },
+    {
+     "s": "A",
+     "t": "{二|ふた}つ{目|め}ですね。{遠|とお}いですか。",
+     "i": "Il secondo, vero? È lontano?"
+    },
+    {
+     "s": "B",
+     "t": "いいえ、{歩|ある}いて{五|ご}{分|ふん}ぐらいです。{銀行|ぎんこう}の{隣|となり}にあります。",
+     "i": "No, ci vogliono circa cinque minuti a piedi. È accanto alla banca."
+    }
+   ],
+   "q": [
+    {
+     "q": "Dove deve girare la donna?",
+     "o": [
+      "A destra al secondo semaforo",
+      "A sinistra al primo semaforo",
+      "A destra al primo semaforo",
+      "Dritto sempre"
+     ],
+     "a": 0,
+     "e": "「{二|ふた}つ{目|め}の{信号|しんごう}を{右|みぎ}に」."
+    },
+    {
+     "q": "Dov'è l'ufficio postale?",
+     "o": [
+      "Accanto alla banca",
+      "Davanti alla stazione",
+      "Dietro il parco",
+      "Accanto alla scuola"
+     ],
+     "a": 0,
+     "e": "「{銀行|ぎんこう}の{隣|となり}にあります」."
+    }
+   ]
+  }
+ ],
+ "coppie": [
+  {
+   "id": "mp-n4-01",
+   "a": "いえ",
+   "b": "いいえ",
+   "ia": "casa",
+   "ib": "no",
+   "cat": "vocale lunga/breve"
+  },
+  {
+   "id": "mp-n4-02",
+   "a": "かた",
+   "b": "かった",
+   "ia": "spalla; modo",
+   "ib": "ha vinto / ha comprato",
+   "cat": "っ doppia"
+  },
+  {
+   "id": "mp-n4-03",
+   "a": "いし",
+   "b": "いしゃ",
+   "ia": "pietra",
+   "ib": "medico",
+   "cat": "sillaba finale"
+  },
+  {
+   "id": "mp-n4-04",
+   "a": "ほし",
+   "b": "ほしい",
+   "ia": "stella",
+   "ib": "desiderato",
+   "cat": "vocale lunga/breve"
+  },
+  {
+   "id": "mp-n4-05",
+   "a": "きて",
+   "b": "きって",
+   "ia": "vieni (te-form)",
+   "ib": "francobollo",
+   "cat": "consonante doppia"
+  },
+  {
+   "id": "mp-n4-06",
+   "a": "おじさん",
+   "b": "おじいさん",
+   "ia": "zio",
+   "ib": "nonno",
+   "cat": "vocale lunga/breve"
+  },
+  {
+   "id": "mp-n4-07",
+   "a": "ゆき",
+   "b": "ゆうき",
+   "ia": "neve",
+   "ib": "coraggio",
+   "cat": "vocale lunga/breve"
+  },
+  {
+   "id": "mp-n4-08",
+   "a": "びょういん",
+   "b": "びよういん",
+   "ia": "ospedale",
+   "ib": "parrucchiere",
+   "cat": "vocale lunga/breve"
+  },
+  {
+   "id": "mp-n4-09",
+   "a": "つき",
+   "b": "すき",
+   "ia": "luna",
+   "ib": "piacere; che piace",
+   "cat": "つ/す"
+  },
+  {
+   "id": "mp-n4-10",
+   "a": "かんじ",
+   "b": "かんじゃ",
+   "ia": "kanji",
+   "ib": "paziente",
+   "cat": "ゃ (suono contratto)"
+  }
+ ],
+ "dettato": [
+  {
+   "id": "dic-n4-01",
+   "t": "{来週|らいしゅう}{試験|しけん}があるので、{勉強|べんきょう}しなければなりません。",
+   "i": "La settimana prossima ho un esame, quindi devo studiare.",
+   "g": "F"
+  },
+  {
+   "id": "dic-n4-02",
+   "t": "{電車|でんしゃ}が{遅|おく}れて、{会議|かいぎ}に{間|ま}に{合|あ}いませんでした。",
+   "i": "Il treno era in ritardo e non sono arrivato in tempo alla riunione.",
+   "g": "M"
+  },
+  {
+   "id": "dic-n4-03",
+   "t": "{来年|らいねん}の{夏|なつ}、{日本|にほん}へ{行|い}くつもりです。",
+   "i": "L'estate prossima ho intenzione di andare in Giappone.",
+   "g": "F"
+  },
+  {
+   "id": "dic-n4-04",
+   "t": "{駅|えき}で{電車|でんしゃ}を{乗|の}り{換|か}えます。",
+   "i": "Cambio treno alla stazione.",
+   "g": "M"
+  },
+  {
+   "id": "dic-n4-05",
+   "t": "{図書館|としょかん}で{本|ほん}を{借|か}りて、{家|いえ}で{読|よ}みます。",
+   "i": "Prendo in prestito un libro in biblioteca e lo leggo a casa.",
+   "g": "M"
+  },
+  {
+   "id": "dic-n4-06",
+   "t": "{雨|あめ}が{降|ふ}っているので、{傘|かさ}を{持|も}っていきます。",
+   "i": "Sta piovendo, perciò porto l'ombrello.",
+   "g": "F"
+  },
+  {
+   "id": "dic-n4-07",
+   "t": "{駅|えき}の{前|まえ}に{新|あたら}しい{店|みせ}ができました。",
+   "i": "Davanti alla stazione è stato aperto un nuovo negozio.",
+   "g": "M"
+  },
+  {
+   "id": "dic-n4-08",
+   "t": "{日曜日|にちようび}は、{家族|かぞく}と{公園|こうえん}で{遊|あそ}びました。",
+   "i": "Domenica ho giocato al parco con la famiglia.",
+   "g": "F"
+  },
+  {
+   "id": "dic-n4-09",
+   "t": "{少|すこ}し{疲|つか}れたので、{早|はや}く{寝|ね}ます。",
+   "i": "Sono un po' stanco, quindi vado a letto presto.",
+   "g": "M"
+  },
+  {
+   "id": "dic-n4-10",
+   "t": "{友達|ともだち}に{借|か}りた{本|ほん}を、{来週|らいしゅう}{返|かえ}します。",
+   "i": "Restituirò la settimana prossima il libro preso in prestito da un amico.",
+   "g": "F"
+  }
+ ],
+ "risposte": [
+  {
+   "id": "res-n4-01",
+   "p": "{明日|あした}、{時間|じかん}がありますか。",
+   "i": "Hai tempo domani?",
+   "o": [
+    "はい、{大丈夫|だいじょうぶ}です。",
+    "はい、{明日|あした}でした。",
+    "いいえ、{時間|じかん}です。"
+   ],
+   "a": 0,
+   "e": "Domanda di disponibilità → {大丈夫|だいじょうぶ}です.",
+   "g": "F"
+  },
+  {
+   "id": "res-n4-02",
+   "p": "{駅|えき}まで{送|おく}りましょうか。",
+   "i": "Ti accompagno alla stazione?",
+   "o": [
+    "ありがとうございます。お{願|ねが}いします。",
+    "いってきます。",
+    "はい、{駅|えき}です。"
+   ],
+   "a": 0,
+   "e": "Offerta di aiuto: ありがとう + お{願|ねが}いします.",
+   "g": "M"
+  },
+  {
+   "id": "res-n4-03",
+   "p": "{今度|こんど}、{一緒|いっしょ}に{食事|しょくじ}しませんか。",
+   "i": "La prossima volta mangiamo insieme?",
+   "o": [
+    "いいですね。ぜひ。",
+    "はい、{食事|しょくじ}でした。",
+    "いいえ、{一緒|いっしょ}です。"
+   ],
+   "a": 0,
+   "e": "Invito → accettazione: いいですね、ぜひ.",
+   "g": "F"
+  },
+  {
+   "id": "res-n4-04",
+   "p": "{風邪|かぜ}を{引|ひ}いたんです。",
+   "i": "Ho preso il raffreddore.",
+   "o": [
+    "お{大事|だいじ}に。",
+    "おめでとうございます。",
+    "いってらっしゃい。"
+   ],
+   "a": 0,
+   "e": "A chi sta male si dice お{大事|だいじ}に.",
+   "g": "M"
+  },
+  {
+   "id": "res-n4-05",
+   "p": "お{先|さき}に{失礼|しつれい}します。",
+   "i": "Vado via prima, con permesso.",
+   "o": [
+    "お{疲|つか}れさまでした。",
+    "いただきます。",
+    "いらっしゃいませ。"
+   ],
+   "a": 0,
+   "e": "Chi resta saluta con お{疲|つか}れさまでした.",
+   "g": "M"
+  },
+  {
+   "id": "res-n4-06",
+   "p": "この{荷物|にもつ}、{持|も}ちましょうか。",
+   "i": "Le porto io questo bagaglio?",
+   "o": [
+    "ありがとうございます。{助|たす}かります。",
+    "はい、{持|も}っていません。",
+    "いいえ、{荷物|にもつ}でした。"
+   ],
+   "a": 0,
+   "e": "Offerta di aiuto: accettare con ありがとう、{助|たす}かります.",
+   "g": "F"
+  },
+  {
+   "id": "res-n4-07",
+   "p": "{週末|しゅうまつ}はどうでしたか。",
+   "i": "Com'è stato il fine settimana?",
+   "o": [
+    "{友達|ともだち}と{会|あ}って、{楽|たの}しかったです。",
+    "はい、{週末|しゅうまつ}です。",
+    "{土曜日|どようび}に{行|い}きます。"
+   ],
+   "a": 0,
+   "e": "Domanda sul passato: rispondere al passato.",
+   "g": "M"
+  },
+  {
+   "id": "res-n4-08",
+   "p": "もう{昼|ひる}ご{飯|はん}を{食|た}べましたか。",
+   "i": "Hai già pranzato?",
+   "o": [
+    "いいえ、これから{食|た}べます。",
+    "はい、これから{食|た}べました。",
+    "いいえ、{食|た}べたくないでした。"
+   ],
+   "a": 0,
+   "e": "もう〜ましたか: いいえ、まだです / これから.",
+   "g": "F"
+  },
+  {
+   "id": "res-n4-09",
+   "p": "ここに{座|すわ}ってもいいですか。",
+   "i": "Posso sedermi qui?",
+   "o": [
+    "ええ、どうぞ。",
+    "ええ、{座|すわ}りました。",
+    "いいえ、{座|すわ}ってください。"
+   ],
+   "a": 0,
+   "e": "〜てもいいですか: ええ、どうぞ / すみません、ちょっと….",
+   "g": "M"
+  },
+  {
+   "id": "res-n4-10",
+   "p": "どうしたんですか。{顔色|かおいろ}が{悪|わる}いですよ。",
+   "i": "Che cos'hai? Hai una brutta cera.",
+   "o": [
+    "ちょっと{頭|あたま}が{痛|いた}いんです。",
+    "はい、{顔|かお}が{好|す}きです。",
+    "いいえ、どうもありがとう。"
+   ],
+   "a": 0,
+   "e": "どうしたんですか: spiegare il motivo.",
+   "g": "F"
+  }
+ ],
+ "shadowing": [
+  {
+   "id": "shd-n4-01",
+   "t": "{急|きゅう}に{雨|あめ}が{降|ふ}ってきました。",
+   "i": "Improvvisamente ha cominciato a piovere.",
+   "g": "F"
+  },
+  {
+   "id": "shd-n4-02",
+   "t": "{駅|えき}に{着|つ}いたら、{連絡|れんらく}してください。",
+   "i": "Quando arrivi alla stazione, avvisami.",
+   "g": "M"
+  },
+  {
+   "id": "shd-n4-03",
+   "t": "{私|わたし}の{趣味|しゅみ}は{写真|しゃしん}を{撮|と}ることです。",
+   "i": "Il mio hobby è scattare foto.",
+   "g": "F"
+  },
+  {
+   "id": "shd-n4-04",
+   "t": "{少|すこ}し{考|かんが}えてから、{決|き}めます。",
+   "i": "Ci penso un po' e poi decido.",
+   "g": "M"
+  },
+  {
+   "id": "shd-n4-05",
+   "t": "{電車|でんしゃ}が{遅|おく}れたので、{会議|かいぎ}に{間|ま}に{合|あ}いませんでした。",
+   "i": "Il treno era in ritardo e non sono arrivato in tempo alla riunione.",
+   "g": "F"
+  },
+  {
+   "id": "shd-n4-06",
+   "t": "この{問題|もんだい}は、{先生|せんせい}に{聞|き}いてもわかりませんでした。",
+   "i": "Questo problema non l'ho capito nemmeno chiedendo all'insegnante.",
+   "g": "M"
+  },
+  {
+   "id": "shd-n4-07",
+   "t": "{雨|あめ}が{止|や}んだら、{散歩|さんぽ}に{行|い}きましょう。",
+   "i": "Quando smette di piovere, andiamo a fare una passeggiata.",
+   "g": "F"
+  },
+  {
+   "id": "shd-n4-08",
+   "t": "{日本|にほん}の{冬|ふゆ}は{寒|さむ}いですが、{雪|ゆき}がきれいです。",
+   "i": "L'inverno in Giappone è freddo, ma la neve è bella.",
+   "g": "M"
+  },
+  {
+   "id": "shd-n4-09",
+   "t": "{毎朝|まいあさ}、ジョギングをするようにしています。",
+   "i": "Cerco di fare jogging ogni mattina.",
+   "g": "F"
+  },
+  {
+   "id": "shd-n4-10",
+   "t": "{旅行|りょこう}に{行|い}く{前|まえ}に、ホテルを{予約|よやく}しておきます。",
+   "i": "Prima di partire per il viaggio, prenoto l'albergo.",
+   "g": "M"
+  }
+ ]
+}

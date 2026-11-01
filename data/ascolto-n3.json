@@ -1,0 +1,600 @@
+{
+ "dialoghi": [
+  {
+   "id": "dlg-n3-01",
+   "t": "{会議|かいぎ}の{変更|へんこう}",
+   "v": {
+    "A": "F",
+    "B": "M"
+   },
+   "righe": [
+    {
+     "s": "A",
+     "t": "{明日|あした}の{会議|かいぎ}、{午後|ごご}に{変更|へんこう}できますか。",
+     "i": "La riunione di domani, si può spostare al pomeriggio?"
+    },
+    {
+     "s": "B",
+     "t": "{午後|ごご}は{客|きゃく}が{来|く}るから、{難|むずか}しいなあ。{午前|ごぜん}{十一時|じゅういちじ}なら{大丈夫|だいじょうぶ}だよ。",
+     "i": "Nel pomeriggio viene un cliente, è difficile. Alle 11 di mattina va bene."
+    },
+    {
+     "s": "A",
+     "t": "わかりました。{十一時|じゅういちじ}にします。{資料|しりょう}は{今日中|きょうじゅう}に{準備|じゅんび}しておきます。",
+     "i": "Capito. Facciamo alle 11. Preparo i documenti entro oggi."
+    }
+   ],
+   "q": [
+    {
+     "q": "Perché il pomeriggio è difficile?",
+     "o": [
+      "Viene un cliente",
+      "C'è un'altra riunione",
+      "L'uomo è in ferie",
+      "Non ci sono i documenti"
+     ],
+     "a": 0,
+     "e": "「{客|きゃく}が{来|く}るから」."
+    },
+    {
+     "q": "A che ora si terrà la riunione?",
+     "o": [
+      "Alle 11",
+      "Alle 1",
+      "Alle 3",
+      "Alle 9"
+     ],
+     "a": 0,
+     "e": "「{十一時|じゅういちじ}にします」: 11 = じゅういちじ."
+    }
+   ]
+  },
+  {
+   "id": "dlg-n3-02",
+   "t": "{引|ひ}っ{越|こ}し",
+   "v": {
+    "A": "F",
+    "B": "M"
+   },
+   "righe": [
+    {
+     "s": "A",
+     "t": "{来月|らいげつ}、{引|ひ}っ{越|こ}すことにしたんだ。",
+     "i": "Il mese prossimo ho deciso di traslocare."
+    },
+    {
+     "s": "B",
+     "t": "そうなんですか。{会社|かいしゃ}から{遠|とお}くなるんじゃないですか。",
+     "i": "Davvero? Non diventerà lontano dall'ufficio?"
+    },
+    {
+     "s": "A",
+     "t": "ええ、でも{家賃|やちん}がずいぶん{安|やす}くなるし、{部屋|へや}も{広|ひろ}くなるから。",
+     "i": "Sì, ma l'affitto diventa molto più basso e anche la stanza è più grande."
+    },
+    {
+     "s": "B",
+     "t": "なるほど。{通勤|つうきん}に{時間|じかん}がかかるのは{大変|たいへん}ですが、{広|ひろ}い{部屋|へや}はうらやましいです。",
+     "i": "Capisco. Fare il pendolare per tanto tempo è faticoso, ma una stanza grande fa invidia."
+    }
+   ],
+   "q": [
+    {
+     "q": "Perché la donna ha deciso di traslocare?",
+     "o": [
+      "L'affitto è più basso e la stanza più grande",
+      "È vicino all'ufficio",
+      "Il suo capo glielo ha chiesto",
+      "L'edificio è nuovo"
+     ],
+     "a": 0,
+     "e": "「{家賃|やちん}がずいぶん{安|やす}くなるし、{部屋|へや}も{広|ひろ}くなる」."
+    },
+    {
+     "q": "Che cosa pensa l'uomo?",
+     "o": [
+      "Che il pendolarismo sarà faticoso, ma invidia la stanza",
+      "Che è una cattiva idea",
+      "Che anche lui traslocherà",
+      "Che l'affitto è troppo alto"
+     ],
+     "a": 0,
+     "e": "「{通勤|つうきん}に{時間|じかん}がかかるのは{大変|たいへん}ですが、{広|ひろ}い{部屋|へや}はうらやましい」."
+    }
+   ]
+  },
+  {
+   "id": "dlg-n3-03",
+   "t": "レストランの{予約|よやく}",
+   "v": {
+    "A": "F",
+    "B": "M"
+   },
+   "righe": [
+    {
+     "s": "A",
+     "t": "{金曜日|きんようび}の{夜|よる}、{六|ろく}{人|にん}で{予約|よやく}したいんですが、{空|あ}いていますか。",
+     "i": "Vorrei prenotare per venerdì sera per sei persone, avete posto?"
+    },
+    {
+     "s": "B",
+     "t": "{申|もう}し{訳|わけ}ございません。{金曜日|きんようび}は{七|なな}{時半|じはん}からでしたら、ご{用意|ようい}できます。",
+     "i": "Mi dispiace. Venerdì possiamo sistemarvi a partire dalle sette e mezza."
+    },
+    {
+     "s": "A",
+     "t": "{七|なな}{時半|じはん}ですか。ちょっと{遅|おそ}いですね。{土曜日|どようび}はどうでしょうか。",
+     "i": "Alle sette e mezza? È un po' tardi. E sabato?"
+    },
+    {
+     "s": "B",
+     "t": "{土曜日|どようび}でしたら、{六|ろく}{時|じ}からお{取|と}りできます。",
+     "i": "Per sabato possiamo riservare dalle sei."
+    },
+    {
+     "s": "A",
+     "t": "では、{土曜日|どようび}の{六|ろく}{時|じ}にお{願|ねが}いします。",
+     "i": "Allora per sabato alle sei, per favore."
+    }
+   ],
+   "q": [
+    {
+     "q": "Perché la donna rifiuta venerdì?",
+     "o": [
+      "È troppo tardi",
+      "Il locale è chiuso",
+      "Sono troppo pochi posti",
+      "Costa troppo"
+     ],
+     "a": 0,
+     "e": "「{七|なな}{時半|じはん}ですか。ちょっと{遅|おそ}い」."
+    },
+    {
+     "q": "Quando prenota alla fine?",
+     "o": [
+      "Sabato alle sei",
+      "Venerdì alle sette e mezza",
+      "Sabato alle sette e mezza",
+      "Venerdì alle sei"
+     ],
+     "a": 0,
+     "e": "「{土曜日|どようび}の{六|ろく}{時|じ}にお{願|ねが}いします」."
+    }
+   ]
+  },
+  {
+   "id": "dlg-n3-04",
+   "t": "{宿題|しゅくだい}の{相談|そうだん}",
+   "v": {
+    "A": "F",
+    "B": "M"
+   },
+   "righe": [
+    {
+     "s": "A",
+     "t": "{先生|せんせい}、レポートの{提出|ていしゅつ}{日|び}ですが、{少|すこ}し{延|の}ばしていただけないでしょうか。",
+     "i": "Professore, riguardo alla data di consegna della relazione, potrebbe posticiparla un po'?"
+    },
+    {
+     "s": "B",
+     "t": "どうしたんですか。{何|なに}か{問題|もんだい}がありましたか。",
+     "i": "Che cosa c'è? Ci sono stati problemi?"
+    },
+    {
+     "s": "A",
+     "t": "{実|じつ}は、{先週|せんしゅう}から{風邪|かぜ}で{寝|ね}ていて、まだ{半分|はんぶん}しか{書|か}けていないんです。",
+     "i": "A dire il vero sono a letto con il raffreddore dalla settimana scorsa e ne ho scritto solo metà."
+    },
+    {
+     "s": "B",
+     "t": "そうですか。では、{三|さん}{日|にち}だけ{待|ま}ちましょう。{無理|むり}をしないでくださいね。",
+     "i": "Capisco. Allora aspetterò soltanto tre giorni. Non si sforzi troppo."
+    }
+   ],
+   "q": [
+    {
+     "q": "Che cosa chiede lo studente?",
+     "o": [
+      "Di posticipare la consegna",
+      "Di cambiare argomento",
+      "Di avere un aiuto",
+      "Di non fare la relazione"
+     ],
+     "a": 0,
+     "e": "「{提出|ていしゅつ}{日|び}を{少|すこ}し{延|の}ばしていただけないでしょうか」."
+    },
+    {
+     "q": "Quanto tempo concede il professore?",
+     "o": [
+      "Tre giorni",
+      "Una settimana",
+      "Un giorno",
+      "Un mese"
+     ],
+     "a": 0,
+     "e": "「{三|さん}{日|にち}だけ{待|ま}ちましょう」."
+    }
+   ]
+  },
+  {
+   "id": "dlg-n3-05",
+   "t": "{駅|えき}の{忘|わす}れ{物|もの}",
+   "v": {
+    "A": "F",
+    "B": "M"
+   },
+   "righe": [
+    {
+     "s": "A",
+     "t": "すみません、さっきの{電車|でんしゃ}に{傘|かさ}を{忘|わす}れてしまったんですが。",
+     "i": "Mi scusi, ho dimenticato l'ombrello sul treno di poco fa."
+    },
+    {
+     "s": "B",
+     "t": "{何|なに}{色|しょく}で、どんな{形|かたち}でしょうか。",
+     "i": "Di che colore e che forma è?"
+    },
+    {
+     "s": "A",
+     "t": "{青色|あおいろ}で、{持|も}つところが{木|き}でできています。",
+     "i": "È blu e il manico è di legno."
+    },
+    {
+     "s": "B",
+     "t": "{少々|しょうしょう}お{待|ま}ちください。…ありましたよ。{今|いま}、{終点|しゅうてん}の{駅|えき}にありますので、{明日|あした}の{朝|あさ}には{取|と}りに{来|きた}られます。",
+     "i": "Un momento, prego. ...C'è. Ora si trova alla stazione capolinea, quindi domattina potrà venire a ritirarlo."
+    }
+   ],
+   "q": [
+    {
+     "q": "Che cosa ha dimenticato la donna?",
+     "o": [
+      "Un ombrello blu con il manico di legno",
+      "Una borsa blu",
+      "Un cappello di legno",
+      "Un libro"
+     ],
+     "a": 0,
+     "e": "「{青色|あおいろ}で、{持|も}つところが{木|き}でできています」."
+    },
+    {
+     "q": "Quando può ritirarlo?",
+     "o": [
+      "Domani mattina",
+      "Subito",
+      "Stasera",
+      "Fra una settimana"
+     ],
+     "a": 0,
+     "e": "「{明日|あした}の{朝|あさ}には{取|と}りに{来|きた}られます」."
+    }
+   ]
+  },
+  {
+   "id": "dlg-n3-06",
+   "t": "{会社|かいしゃ}の{新人|しんじん}",
+   "v": {
+    "A": "F",
+    "B": "M"
+   },
+   "righe": [
+    {
+     "s": "A",
+     "t": "{最近|さいきん}、{新人|しんじん}の{山本|やまもと}くんはどう。",
+     "i": "Come va ultimamente il nuovo arrivato Yamamoto?"
+    },
+    {
+     "s": "B",
+     "t": "まじめで、{何|なん}でも{一生懸命|いっしょうけんめい}やるんですが、{自分|じぶん}から{質問|しつもん}しないのが{気|き}になります。",
+     "i": "È serio e si impegna in tutto, ma mi preoccupa che non faccia domande di sua iniziativa."
+    },
+    {
+     "s": "A",
+     "t": "それは{心配|しんぱい}だね。わからないことがあっても、{一|いち}{人|にん}で{悩|なや}むことが{多|おお}いんじゃないかな。",
+     "i": "È preoccupante. Forse anche quando non capisce qualcosa spesso si tormenta da solo."
+    },
+    {
+     "s": "B",
+     "t": "そう{思|おも}います。{今度|こんど}、{私|わたし}から{声|こえ}をかけてみます。",
+     "i": "Penso di sì. La prossima volta proverò io a rivolgergli la parola."
+    }
+   ],
+   "q": [
+    {
+     "q": "Che cosa preoccupa l'uomo di Yamamoto?",
+     "o": [
+      "Non fa domande di sua iniziativa",
+      "Arriva spesso in ritardo",
+      "Fa molti errori",
+      "Parla troppo"
+     ],
+     "a": 0,
+     "e": "「{自分|じぶん}から{質問|しつもん}しないのが{気|き}になります」."
+    },
+    {
+     "q": "Che cosa farà l'uomo?",
+     "o": [
+      "Rivolgerà lui la parola a Yamamoto",
+      "Cambierà il suo reparto",
+      "Lo sgriderà",
+      "Lo licenzierà"
+     ],
+     "a": 0,
+     "e": "「{私|わたし}から{声|こえ}をかけてみます」."
+    }
+   ]
+  }
+ ],
+ "coppie": [
+  {
+   "id": "mp-n3-01",
+   "a": "ようし",
+   "b": "ようじ",
+   "ia": "modulo (carta)",
+   "ib": "faccenda, impegno",
+   "cat": "sorda/sonora"
+  },
+  {
+   "id": "mp-n3-02",
+   "a": "ちがう",
+   "b": "ちかう",
+   "ia": "essere diverso",
+   "ib": "giurare",
+   "cat": "sorda/sonora"
+  },
+  {
+   "id": "mp-n3-03",
+   "a": "おと",
+   "b": "おっと",
+   "ia": "suono",
+   "ib": "marito",
+   "cat": "consonante doppia"
+  },
+  {
+   "id": "mp-n3-04",
+   "a": "ざっし",
+   "b": "さっし",
+   "ia": "rivista",
+   "ib": "intuizione",
+   "cat": "sorda/sonora"
+  },
+  {
+   "id": "mp-n3-05",
+   "a": "しゅじん",
+   "b": "しじん",
+   "ia": "marito; padrone",
+   "ib": "poeta",
+   "cat": "ゅ (suono contratto)"
+  },
+  {
+   "id": "mp-n3-06",
+   "a": "ちず",
+   "b": "ちじ",
+   "ia": "mappa",
+   "ib": "governatore",
+   "cat": "ず/じ"
+  },
+  {
+   "id": "mp-n3-07",
+   "a": "ほうそう",
+   "b": "ほそう",
+   "ia": "trasmissione",
+   "ib": "pavimentazione stradale",
+   "cat": "vocale lunga/breve"
+  },
+  {
+   "id": "mp-n3-08",
+   "a": "おおい",
+   "b": "おい",
+   "ia": "numeroso",
+   "ib": "nipote (di zio)",
+   "cat": "vocale lunga/breve"
+  }
+ ],
+ "dettato": [
+  {
+   "id": "dic-n3-01",
+   "t": "{結果|けっか}は{来週|らいしゅう}{発表|はっぴょう}されます。",
+   "i": "I risultati saranno annunciati la settimana prossima.",
+   "g": "F"
+  },
+  {
+   "id": "dic-n3-02",
+   "t": "{会議|かいぎ}の{資料|しりょう}は、{前日|ぜんじつ}までに{送|おく}ってください。",
+   "i": "Inviate i materiali della riunione entro il giorno prima.",
+   "g": "M"
+  },
+  {
+   "id": "dic-n3-03",
+   "t": "この{店|みせ}は、{安|やす}いだけでなく、{味|あじ}もいいです。",
+   "i": "Questo locale non è solo economico, ma anche il sapore è buono.",
+   "g": "F"
+  },
+  {
+   "id": "dic-n3-04",
+   "t": "{雨|あめ}のせいで、{試合|しあい}は{中止|ちゅうし}になりました。",
+   "i": "A causa della pioggia la partita è stata annullata.",
+   "g": "M"
+  },
+  {
+   "id": "dic-n3-05",
+   "t": "{忙|いそが}しいにもかかわらず、{手伝|てつだ}ってくれました。",
+   "i": "Nonostante fosse occupato, mi ha aiutato.",
+   "g": "F"
+  },
+  {
+   "id": "dic-n3-06",
+   "t": "{彼|かれ}は{説明|せつめい}を{聞|き}いても、{理解|りかい}できなかったようです。",
+   "i": "Sembra che anche dopo aver ascoltato la spiegazione non abbia capito.",
+   "g": "M"
+  },
+  {
+   "id": "dic-n3-07",
+   "t": "{電車|でんしゃ}が{止|と}まったため、{会社|かいしゃ}に{遅|おく}れました。",
+   "i": "Sono arrivato in ritardo in ufficio perché il treno si è fermato.",
+   "g": "F"
+  },
+  {
+   "id": "dic-n3-08",
+   "t": "{健康|けんこう}のために、{毎日|まいにち}{二十分|にじゅっぷん}{歩|ある}くことにしています。",
+   "i": "Per la salute ho deciso di camminare venti minuti ogni giorno.",
+   "g": "M"
+  }
+ ],
+ "risposte": [
+  {
+   "id": "res-n3-01",
+   "p": "{手伝|てつだ}いましょうか。",
+   "i": "Vuoi una mano?",
+   "o": [
+    "ありがとう。{助|たす}かります。",
+    "どういたしまして。",
+    "いただきます。"
+   ],
+   "a": 0,
+   "e": "Offerta di aiuto: accettare con ありがとう、{助|たす}かります.",
+   "g": "M"
+  },
+  {
+   "id": "res-n3-02",
+   "p": "お{忙|いそが}しいところ、すみません。",
+   "i": "Mi scusi se la disturbo mentre è occupato.",
+   "o": [
+    "いいえ、{大丈夫|だいじょうぶ}ですよ。どうしましたか。",
+    "はい、{忙|いそが}しいです。",
+    "ありがとうございます。いただきます。"
+   ],
+   "a": 0,
+   "e": "Scusa per il disturbo: rispondere con いいえ、{大丈夫|だいじょうぶ}ですよ.",
+   "g": "F"
+  },
+  {
+   "id": "res-n3-03",
+   "p": "この{資料|しりょう}、{今日|きょう}{中|ちゅう}に{見|み}てもらえませんか。",
+   "i": "Può guardare questi materiali entro oggi?",
+   "o": [
+    "はい、わかりました。{午後|ごご}に{見|み}ておきます。",
+    "いいえ、{今日|きょう}は{午後|ごご}でした。",
+    "はい、{見|み}てあげましょうか。"
+   ],
+   "a": 0,
+   "e": "Richiesta: accettare con わかりました + piano.",
+   "g": "M"
+  },
+  {
+   "id": "res-n3-04",
+   "p": "ご{注文|ちゅうもん}はお{決|き}まりですか。",
+   "i": "Ha deciso che cosa ordinare?",
+   "o": [
+    "はい、このセットをお{願|ねが}いします。",
+    "はい、{決|き}まっていません。",
+    "いいえ、{注文|ちゅうもん}でした。"
+   ],
+   "a": 0,
+   "e": "Al ristorante: はい、〜をお{願|ねが}いします.",
+   "g": "F"
+  },
+  {
+   "id": "res-n3-05",
+   "p": "{先週|せんしゅう}の{会議|かいぎ}、どうして{来|こ}なかったんですか。",
+   "i": "Perché non sei venuto alla riunione della settimana scorsa?",
+   "o": [
+    "すみません、{急|きゅう}に{熱|ねつ}が{出|で}てしまって。",
+    "はい、{来|き}ませんでしたか。",
+    "いいえ、{会議|かいぎ}は{来週|らいしゅう}です。"
+   ],
+   "a": 0,
+   "e": "どうして: spiegare il motivo.",
+   "g": "M"
+  },
+  {
+   "id": "res-n3-06",
+   "p": "{明日|あした}の{天気|てんき}、どうなるでしょうか。",
+   "i": "Che tempo farà domani?",
+   "o": [
+    "{午後|ごご}から{雨|あめ}になるそうですよ。",
+    "はい、{明日|あした}は{天気|てんき}です。",
+    "{昨日|きのう}は{雨|あめ}でした。"
+   ],
+   "a": 0,
+   "e": "〜そうです: riferire informazioni sentite.",
+   "g": "F"
+  },
+  {
+   "id": "res-n3-07",
+   "p": "このパソコン、{使|つか}ってもかまいませんか。",
+   "i": "Posso usare questo computer?",
+   "o": [
+    "ええ、どうぞ。{自由|じゆう}に{使|つか}ってください。",
+    "いいえ、かまいませんでした。",
+    "ええ、{使|つか}いました。"
+   ],
+   "a": 0,
+   "e": "かまいませんか: どうぞ = prego.",
+   "g": "M"
+  },
+  {
+   "id": "res-n3-08",
+   "p": "ご{都合|つごう}のいい{日|ひ}はありますか。",
+   "i": "C'è un giorno che le va bene?",
+   "o": [
+    "{来週|らいしゅう}の{水曜日|すいようび}なら、{空|あ}いています。",
+    "はい、{都合|つごう}がいいです。",
+    "いいえ、{今日|きょう}は{水曜日|すいようび}でした。"
+   ],
+   "a": 0,
+   "e": "Disponibilità: 〜なら、{空|あ}いています.",
+   "g": "F"
+  }
+ ],
+ "shadowing": [
+  {
+   "id": "shd-n3-01",
+   "t": "{私|わたし}の{意見|いけん}を{聞|き}いていただけませんか。",
+   "i": "Potrebbe ascoltare la mia opinione?",
+   "g": "F"
+  },
+  {
+   "id": "shd-n3-02",
+   "t": "ご{連絡|れんらく}が{遅|おそ}くなってしまい、{申|もう}し{訳|わけ}ありません。",
+   "i": "Mi scuso per aver tardato a contattarla.",
+   "g": "F"
+  },
+  {
+   "id": "shd-n3-03",
+   "t": "{彼|かれ}の{話|はなし}を{聞|き}いているうちに、だんだん{眠|ねむ}くなってきました。",
+   "i": "Mentre ascoltavo il suo discorso, mi è venuto sempre più sonno.",
+   "g": "M"
+  },
+  {
+   "id": "shd-n3-04",
+   "t": "もう{少|すこ}し{安|やす}ければ、{買|か}うつもりだったのに。",
+   "i": "Se fosse stato un po' più economico, avevo intenzione di comprarlo.",
+   "g": "F"
+  },
+  {
+   "id": "shd-n3-05",
+   "t": "{経験|けいけん}がある{人|ひと}を{優先|ゆうせん}して{採用|さいよう}する{予定|よてい}です。",
+   "i": "Abbiamo in programma di assumere con priorità chi ha esperienza.",
+   "g": "M"
+  },
+  {
+   "id": "shd-n3-06",
+   "t": "{電気|でんき}を{消|け}し{忘|わす}れて、{出|で}かけてしまいました。",
+   "i": "Sono uscito dimenticando di spegnere la luce.",
+   "g": "F"
+  },
+  {
+   "id": "shd-n3-07",
+   "t": "この{仕事|しごと}は、{思|おも}ったより{時間|じかん}がかかりそうです。",
+   "i": "Questo lavoro sembra richiedere più tempo del previsto.",
+   "g": "M"
+  },
+  {
+   "id": "shd-n3-08",
+   "t": "{健康|けんこう}でいられるのは、{家族|かぞく}のおかげです。",
+   "i": "Posso stare in salute grazie alla mia famiglia.",
+   "g": "F"
+  }
+ ]
+}

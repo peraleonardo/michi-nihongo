@@ -1,0 +1,1078 @@
+[
+ {
+  "id": "t-n3-01",
+  "t": "{朝|あさ}の{習慣|しゅうかん}",
+  "tipo": "brano",
+  "jp": [
+   "{私|わたし}/は/{毎朝|まいあさ}/{散歩|さんぽ}/を/する/{習慣|しゅうかん}/が/あります/。/{以前|いぜん}/は/{忙|いそが}しくて/、/{朝|あさ}/{早|はや}く/{起|お}きる/の/が/{苦手|にがて}/でした/。",
+   "{去年|きょねん}/、/{健康|けんこう}/の/ため/に/{歩|ある}く/こと/に/しました/。/{最初|さいしょ}/は/{大変|たいへん}/でしたが/、/{一か月|いっかげつ}/たつと/、/{体|からだ}/が/{軽|かる}く/なって/、/{気分|きぶん}/も/よく/なりました/。",
+   "{今|いま}/では/、/{歩|ある}かない/と/{落|お}ち{着|つ}かない/ほど/です/。/{朝|あさ}/の/{空気|くうき}/を/{吸|す}う/と/、/いい/{一日|いちにち}/に/なる/{気|き}/が/します/。"
+  ],
+  "it": [
+   "Ho l'abitudine di fare una passeggiata ogni mattina. In passato ero occupato e alzarmi presto mi costava fatica.",
+   "L'anno scorso ho deciso di camminare per la salute. All'inizio era faticoso, ma dopo un mese il corpo si è fatto più leggero e anche l'umore è migliorato.",
+   "Ora, se non cammino, mi sento inquieto. Respirando l'aria del mattino ho la sensazione che sarà una bella giornata."
+  ],
+  "gl": {
+   "習慣": [
+    "しゅうかん",
+    "abitudine"
+   ],
+   "以前": [
+    "いぜん",
+    "in passato"
+   ],
+   "苦手": [
+    "にがて",
+    "punto debole; che non piace"
+   ],
+   "健康": [
+    "けんこう",
+    "salute"
+   ],
+   "最初": [
+    "さいしょ",
+    "all'inizio"
+   ],
+   "大変": [
+    "たいへん",
+    "faticoso; difficile"
+   ],
+   "一か月": [
+    "いっかげつ",
+    "un mese"
+   ],
+   "体": [
+    "からだ",
+    "corpo"
+   ],
+   "軽く": [
+    "かるく",
+    "leggero (avv.)"
+   ],
+   "気分": [
+    "きぶん",
+    "umore"
+   ],
+   "落ち着かない": [
+    "おちつかない",
+    "sentirsi inquieto"
+   ],
+   "空気": [
+    "くうき",
+    "aria"
+   ],
+   "吸う": [
+    "すう",
+    "respirare; inalare"
+   ]
+  },
+  "q": [
+   {
+    "q": "Perché l'autore ha cominciato a camminare?",
+    "o": [
+     "Per la salute",
+     "Per perdere peso",
+     "Per andare al lavoro",
+     "Per incontrare amici"
+    ],
+    "a": 0,
+    "e": "「{健康|けんこう}のために{歩|ある}くことにしました」: ことにする = decidere di."
+   },
+   {
+    "q": "Che cosa è cambiato dopo un mese?",
+    "o": [
+     "Il corpo è più leggero e l'umore migliore",
+     "Si è stancato di più",
+     "Ha smesso di camminare",
+     "Si alza più tardi"
+    ],
+    "a": 0,
+    "e": "「{体|からだ}が{軽|かる}くなって、{気分|きぶん}もよくなりました」."
+   },
+   {
+    "q": "Come si sente ora se non cammina?",
+    "o": [
+     "Inquieto",
+     "Felice",
+     "Annoiato",
+     "Stanco"
+    ],
+    "a": 0,
+    "e": "「{歩|ある}かないと{落|お}ち{着|つ}かないほど」: ほど = a tal punto."
+   }
+  ]
+ },
+ {
+  "id": "t-n3-02",
+  "t": "{会議|かいぎ}の{日程|にってい}{変更|へんこう}のお{願|ねが}い",
+  "tipo": "email",
+  "jp": [
+   "{営業|えいぎょう}{部|ぶ}/の/{皆様|みなさま}/へ",
+   "お{疲|つか}れさまです/。/{来週|らいしゅう}/{火曜日|かようび}/に/{予定|よてい}/して/いた/{会議|かいぎ}/について/、/お{願|ねが}い/が/あります/。",
+   "{急|きゅう}/に/お{客様|きゃくさま}/と/の/{打|う}ち{合|あ}わせ/が/{入|はい}った/ため/、/{会議|かいぎ}/を/{水曜日|すいようび}/の/{午後|ごご}/{二|に}{時|じ}/に/{変更|へんこう}/したい/と/{考|かんが}えて/います/。",
+   "ご/{都合|つごう}/の/{悪|わる}い/{方|ほう}/は/、/{今週|こんしゅう}/の/{金曜日|きんようび}/まで/に/{私|わたし}/に/{連絡|れんらく}/して/ください/。",
+   "{会議|かいぎ}/で/は/、/{新|あたら}しい/{商品|しょうひん}/の/{販売|はんばい}/{計画|けいかく}/について/{話|はな}し{合|あ}う/{予定|よてい}です/。/{資料|しりょう}/は/{前日|ぜんじつ}/まで/に/お{送|おく}り/します/。",
+   "{急|きゅう}な/お{願|ねが}い/で/{申|もう}し{訳|わけ}/ありません/が/、/よろしく/お{願|ねが}い/いたします/。",
+   "{山本|やまもと}"
+  ],
+  "it": [
+   "A tutto l'ufficio vendite",
+   "Buon lavoro a tutti. Ho una richiesta riguardo alla riunione prevista per martedì prossimo.",
+   "Poiché è stato fissato all'improvviso un incontro con un cliente, vorrei spostare la riunione a mercoledì alle due del pomeriggio.",
+   "Chi non può partecipare mi contatti entro venerdì di questa settimana.",
+   "Nella riunione si parlerà del piano di vendita del nuovo prodotto. Invierò i materiali entro il giorno precedente.",
+   "Mi scuso per la richiesta improvvisa, e vi ringrazio fin d'ora.",
+   "Yamamoto"
+  ],
+  "gl": {
+   "営業部": [
+    "えいぎょうぶ",
+    "ufficio vendite"
+   ],
+   "予定": [
+    "よてい",
+    "programma"
+   ],
+   "打ち合わせ": [
+    "うちあわせ",
+    "riunione preparatoria"
+   ],
+   "変更": [
+    "へんこう",
+    "cambiamento"
+   ],
+   "都合": [
+    "つごう",
+    "convenienza; disponibilità"
+   ],
+   "連絡": [
+    "れんらく",
+    "contatto"
+   ],
+   "販売": [
+    "はんばい",
+    "vendita"
+   ],
+   "計画": [
+    "けいかく",
+    "piano"
+   ],
+   "話し合う": [
+    "はなしあう",
+    "discutere"
+   ],
+   "資料": [
+    "しりょう",
+    "materiali"
+   ],
+   "申し訳": [
+    "もうしわけ",
+    "scuse; mi dispiace"
+   ]
+  },
+  "q": [
+   {
+    "q": "Perché si vuole cambiare la data della riunione?",
+    "o": [
+     "È stato fissato un incontro con un cliente",
+     "Il responsabile è in malattia",
+     "La sala è occupata",
+     "Ci sono troppi partecipanti"
+    ],
+    "a": 0,
+    "e": "「{急|きゅう}にお{客様|きゃくさま}との{打|う}ち{合|あ}わせが{入|はい}ったため」: ため = a causa di."
+   },
+   {
+    "q": "Qual è il nuovo orario?",
+    "o": [
+     "Mercoledì alle 14",
+     "Martedì alle 14",
+     "Mercoledì alle 10",
+     "Venerdì alle 14"
+    ],
+    "a": 0,
+    "e": "「{水曜日|すいようび}の{午後|ごご}{二|に}{時|じ}に{変更|へんこう}」."
+   },
+   {
+    "q": "Che cosa devono fare coloro che non possono partecipare?",
+    "o": [
+     "Contattare Yamamoto entro venerdì",
+     "Rispondere entro mercoledì",
+     "Non fare nulla",
+     "Venire comunque"
+    ],
+    "a": 0,
+    "e": "「{金曜日|きんようび}までに{私|わたし}に{連絡|れんらく}してください」."
+   }
+  ]
+ },
+ {
+  "id": "t-n3-03",
+  "t": "ごみを{減|へ}らすために",
+  "tipo": "brano",
+  "jp": [
+   "{私|わたし}たち/は/{毎日|まいにち}/、/たくさん/の/ごみ/を/{出|だ}して/います/。/{日本|にほん}/で/は/、/{一人|ひとり}/が/{一|いち}{日|にち}/に/{約|やく}/{一|いち}キロ/の/ごみ/を/{出|だ}す/と/{言|い}われて/います/。",
+   "ごみ/が/{増|ふ}える/と/、/{燃|も}やす/ため/に/{多|おお}く/の/エネルギー/が/{必要|ひつよう}/に/なり/、/{環境|かんきょう}/に/も/{悪|わる}い/{影響|えいきょう}/を/{与|あた}えます/。",
+   "そこで/、/{多|おお}く/の/{町|まち}/で/は/、/ごみ/を/{種類|しゅるい}ごと/に/{分|わ}けて/{出|だ}す/ルール/を/{作|つく}りました/。/{紙|かみ}/、/びん/、/プラスチック/など/を/{別々|べつべつ}/に/{集|あつ}めれば/、/もう{一度|いちど}/{使|つか}う/こと/が/できます/。",
+   "また/、/{買|か}い{物|もの}/の/とき/に/{袋|ふくろ}/を/{持|も}って/いく/など/、/{一人|ひとり}/{一人|ひとり}/の/{小|ちい}さな/{努力|どりょく}/も/{大切|たいせつ}です/。"
+  ],
+  "it": [
+   "Ogni giorno produciamo molti rifiuti. Si dice che in Giappone ogni persona produca circa un chilo di rifiuti al giorno.",
+   "Quando i rifiuti aumentano, per bruciarli serve molta energia e questo ha un cattivo effetto anche sull'ambiente.",
+   "Perciò in molte città si è creata la regola di dividere i rifiuti per tipo. Se carta, vetro e plastica si raccolgono separatamente, si possono riutilizzare.",
+   "Inoltre sono importanti anche i piccoli sforzi di ciascuno, come portare la borsa quando si fa la spesa."
+  ],
+  "gl": {
+   "ごみ": [
+    "ごみ",
+    "rifiuti"
+   ],
+   "約": [
+    "やく",
+    "circa"
+   ],
+   "燃やす": [
+    "もやす",
+    "bruciare"
+   ],
+   "環境": [
+    "かんきょう",
+    "ambiente"
+   ],
+   "影響": [
+    "えいきょう",
+    "influenza"
+   ],
+   "与えます": [
+    "あたえます",
+    "dare; esercitare"
+   ],
+   "種類ごと": [
+    "しゅるいごと",
+    "tipo"
+   ],
+   "分けて": [
+    "わけて",
+    "dividere"
+   ],
+   "集めれば": [
+    "あつめれば",
+    "raccogliere"
+   ],
+   "袋": [
+    "ふくろ",
+    "sacchetto"
+   ],
+   "努力": [
+    "どりょく",
+    "sforzo"
+   ]
+  },
+  "q": [
+   {
+    "q": "Perché l'aumento dei rifiuti è un problema?",
+    "o": [
+     "Serve molta energia e danneggia l'ambiente",
+     "Mancano i posti dove buttarli",
+     "Costano molto",
+     "Inquinano l'acqua dei fiumi"
+    ],
+    "a": 0,
+    "e": "「{多|おお}くのエネルギーが{必要|ひつよう}になり、{環境|かんきょう}にも{悪|わる}い{影響|えいきょう}」."
+   },
+   {
+    "q": "Che regola hanno creato molte città?",
+    "o": [
+     "Dividere i rifiuti per tipo",
+     "Pagare per ogni sacchetto",
+     "Non buttare nulla",
+     "Portare i rifiuti in fabbrica"
+    ],
+    "a": 0,
+    "e": "「{種類|しゅるい}ごとに{分|わ}けて{出|だ}すルール」."
+   },
+   {
+    "q": "Che cosa è importante secondo l'autore?",
+    "o": [
+     "Anche i piccoli sforzi di ciascuno",
+     "Solo le leggi",
+     "Solo le grandi aziende",
+     "Usare più sacchetti"
+    ],
+    "a": 0,
+    "e": "「{一|いち}{人|にん}{一|いち}{人|にん}の{小|ちい}さな{努力|どりょく}も{大切|たいせつ}」."
+   }
+  ]
+ },
+ {
+  "id": "t-n3-04",
+  "t": "ボランティア{募集|ぼしゅう}",
+  "tipo": "annuncio",
+  "jp": [
+   "{市|し}/から/の/お{知|し}らせ",
+   "{春|はる}/の/「/{町|まち}/を/きれい/に/する/{日|ひ}/」/の/ボランティア/を/{募集|ぼしゅう}/します/。",
+   "{日時|にちじ}/：/{四月|しがつ}/{二十日|はつか}/（/{日曜日|にちようび}/）/{午前|ごぜん}/{九|きゅう}{時|じ}/から/{正午|しょうご}/まで/。/{雨|あめ}/の/{場合|ばあい}/は/、/{翌週|よくしゅう}/の/{日曜日|にちようび}/に/{行|おこな}います/。",
+   "{集合|しゅうごう}/{場所|ばしょ}/は/{市役所|しやくしょ}/の/{前|まえ}です/。/{軍手|ぐんて}/と/ごみ{袋|ぶくろ}/は/{市|し}/で/{用意|ようい}/します/ので/、/{持|も}って/こなくて/も/{構|かま}いません/。",
+   "{参加|さんか}/したい/{方|ほう}/は/、/{四月|しがつ}/{十日|とおか}/まで/に/、/{電話|でんわ}/または/メール/で/{申|もう}し{込|こ}んで/ください/。/{高校生|こうこうせい}/{以下|いか}/の/{方|ほう}/は/、/{保護|ほご}{者|しゃ}/の/{許可|きょか}/が/{必要|ひつよう}です/。"
+  ],
+  "it": [
+   "Avviso dal comune",
+   "Cerchiamo volontari per la «Giornata della pulizia della città» di primavera.",
+   "Data e ora: 20 aprile (domenica) dalle 9 a mezzogiorno. In caso di pioggia, si terrà la domenica successiva.",
+   "Il luogo di ritrovo è davanti al municipio. Guanti e sacchi per i rifiuti li prepara il comune, quindi non occorre portarli.",
+   "Chi vuole partecipare si iscriva entro il 10 aprile per telefono o e-mail. Gli studenti delle superiori o più giovani hanno bisogno del permesso di un genitore."
+  ],
+  "gl": {
+   "募集": [
+    "ぼしゅう",
+    "reclutamento"
+   ],
+   "翌週": [
+    "よくしゅう",
+    "settimana successiva"
+   ],
+   "集合": [
+    "しゅうごう",
+    "ritrovo"
+   ],
+   "市役所": [
+    "しやくしょ",
+    "municipio"
+   ],
+   "軍手": [
+    "ぐんて",
+    "guanti da lavoro"
+   ],
+   "用意": [
+    "ようい",
+    "preparazione"
+   ],
+   "構いません": [
+    "かまいません",
+    "non importa (構わない)"
+   ],
+   "参加": [
+    "さんか",
+    "partecipazione"
+   ],
+   "申し込んで": [
+    "もうしこんで",
+    "iscriversi"
+   ],
+   "保護者": [
+    "ほごしゃ",
+    "genitore; tutore"
+   ],
+   "許可": [
+    "きょか",
+    "permesso"
+   ]
+  },
+  "q": [
+   {
+    "q": "Che cosa succede se piove?",
+    "o": [
+     "Si fa la domenica successiva",
+     "Si annulla",
+     "Si fa in una sala",
+     "Si fa il sabato"
+    ],
+    "a": 0,
+    "e": "「{雨|あめ}の{場合|ばあい}は、{翌週|よくしゅう}の{日曜日|にちようび}」."
+   },
+   {
+    "q": "Che cosa devono portare i partecipanti?",
+    "o": [
+     "Non devono portare nulla di particolare",
+     "Guanti e sacchi",
+     "Il pranzo",
+     "Una scopa"
+    ],
+    "a": 0,
+    "e": "「{持|も}ってこなくても{構|かま}いません」: なくてもいい = non è necessario."
+   },
+   {
+    "q": "Che cosa serve ai minorenni delle superiori o meno?",
+    "o": [
+     "Il permesso di un genitore",
+     "Un certificato medico",
+     "Un'assicurazione",
+     "Un accompagnatore insegnante"
+    ],
+    "a": 0,
+    "e": "「{保護|ほご}{者|しゃ}の{許可|きょか}が{必要|ひつよう}」."
+   }
+  ]
+ },
+ {
+  "id": "t-n3-05",
+  "t": "{会社|かいしゃ}で",
+  "tipo": "dialogo",
+  "jp": [
+   "{後輩|こうはい}/：/{先輩|せんぱい}/、/ちょっと/ご/{相談|そうだん}/したい/こと/が/ある/んです/が/、/{今|いま}/よろしいでしょう/か/。",
+   "{先輩|せんぱい}/：/いい/よ/。/どう/した/の/。",
+   "{後輩|こうはい}/：/{実|じつ}は/、/{来週|らいしゅう}/お{客様|きゃくさま}/に/{出|だ}す/{資料|しりょう}/が/なかなか/まとまらなくて/、/{困|こま}って/いる/んです/。",
+   "{先輩|せんぱい}/：/どこ/が/{一番|いちばん}/{難|むずか}しい/の/。",
+   "{後輩|こうはい}/：/{数字|すうじ}/を/どう/{見|み}せたら/いい/か/、/わからない/んです/。",
+   "{先輩|せんぱい}/：/それなら/、/グラフ/を/{使|つか}う/と/いい/よ/。/{去年|きょねん}/の/{資料|しりょう}/を/{貸|か}して/あげる/から/、/あと/で/{見|み}て/みて/。",
+   "{後輩|こうはい}/：/ありがとうございます/。/{助|たす}かります/。"
+  ],
+  "it": [
+   "Collega junior: Senpai, vorrei chiederle un consiglio, ha un momento?",
+   "Senpai: Certo. Che cosa c'è?",
+   "Junior: Il fatto è che i materiali da presentare al cliente la settimana prossima non riesco proprio a metterli insieme, e sono in difficoltà.",
+   "Senpai: Qual è la parte più difficile?",
+   "Junior: Non so come presentare i numeri.",
+   "Senpai: In tal caso conviene usare un grafico. Ti presto i materiali dell'anno scorso, dagli un'occhiata più tardi.",
+   "Junior: Grazie, mi è di grande aiuto."
+  ],
+  "gl": {
+   "後輩": [
+    "こうはい",
+    "collega più giovane"
+   ],
+   "先輩": [
+    "せんぱい",
+    "senpai; collega anziano"
+   ],
+   "相談": [
+    "そうだん",
+    "consiglio"
+   ],
+   "実は": [
+    "じつは",
+    "a dire il vero"
+   ],
+   "資料": [
+    "しりょう",
+    "materiali"
+   ],
+   "まとまらなくて": [
+    "まとまらなくて",
+    "mettersi insieme"
+   ],
+   "困って": [
+    "こまって",
+    "essere in difficoltà"
+   ],
+   "数字": [
+    "すうじ",
+    "numeri"
+   ],
+   "見せたら": [
+    "みせたら",
+    "mostrare"
+   ],
+   "貸して": [
+    "かして",
+    "prestare"
+   ]
+  },
+  "q": [
+   {
+    "q": "Di che cosa ha bisogno il collega junior?",
+    "o": [
+     "Aiuto con i materiali per il cliente",
+     "Un giorno di ferie",
+     "Un nuovo computer",
+     "Un aumento di stipendio"
+    ],
+    "a": 0,
+    "e": "「お{客様|きゃくさま}に{出|だ}す{資料|しりょう}がなかなかまとまらなくて」."
+   },
+   {
+    "q": "Qual è il problema?",
+    "o": [
+     "Non sa come mostrare i numeri",
+     "Non ha i dati",
+     "Non conosce il cliente",
+     "Non ha tempo"
+    ],
+    "a": 0,
+    "e": "「{数字|すうじ}をどう{見|み}せたらいいか、わからない」."
+   },
+   {
+    "q": "Che cosa consiglia il senpai?",
+    "o": [
+     "Usare un grafico",
+     "Chiedere al cliente",
+     "Rimandare la presentazione",
+     "Scrivere tutto a mano"
+    ],
+    "a": 0,
+    "e": "「グラフを{使|つか}うといいよ」."
+   }
+  ]
+ },
+ {
+  "id": "t-n3-06",
+  "t": "{本|ほん}を{読|よ}む{楽|たの}しさ",
+  "tipo": "brano",
+  "jp": [
+   "{最近|さいきん}/、/{本|ほん}/を/{読|よ}む/{人|ひと}/が/{減|へ}って/いる/と/{言|い}われて/います/。/しかし/、/{私|わたし}/は/{本|ほん}/を/{読|よ}む/こと/に/は/、/{他|ほか}/で/は/{得|え}られない/{楽|たの}しさ/が/ある/と/{思|おも}います/。",
+   "{映画|えいが}/や/テレビ/は/、/{映像|えいぞう}/と/{音|おと}/で/、/すぐ/に/{内容|ないよう}/を/{教|おし}えて/くれます/。/{一方|いっぽう}/、/{本|ほん}/は/{文字|もじ}/だけな/ので/、/{読|よ}む/{人|ひと}/が/{自分|じぶん}/で/{場面|ばめん}/や/{人|ひと}/の/{顔|かお}/を/{想像|そうぞう}/しなければ/なりません/。",
+   "この/{想像|そうぞう}/する/{時間|じかん}/が/、/{本|ほん}/の/{一番|いちばん}/の/おもしろさ/で/はないでしょう/か/。",
+   "また/、/{本|ほん}/は/{自分|じぶん}/の/ペース/で/{読|よ}める/の/も/いい/{点|てん}です/。/わからない/ところ/は/{何|なん}{度|ど}/でも/{読|よ}み/{直|なお}せます/し/、/{疲|つか}れたら/、/いつ/でも/{閉|と}じる/こと/が/できます/。"
+  ],
+  "it": [
+   "Si dice che ultimamente chi legge libri stia diminuendo. Tuttavia penso che leggere offra un piacere che non si trova altrove.",
+   "Film e televisione ci mostrano subito il contenuto con immagini e suoni. I libri invece sono solo parole, per cui chi legge deve immaginare da sé scene e volti.",
+   "Non è proprio questo tempo dedicato all'immaginazione il maggior fascino di un libro?",
+   "Inoltre un altro pregio è che si può leggere al proprio ritmo. Ciò che non si capisce si può rileggere quante volte si vuole, e quando si è stanchi si può chiudere in qualsiasi momento."
+  ],
+  "gl": {
+   "最近": [
+    "さいきん",
+    "ultimamente"
+   ],
+   "減って": [
+    "へって",
+    "diminuire"
+   ],
+   "得られない": [
+    "えられない",
+    "ottenere"
+   ],
+   "映像": [
+    "えいぞう",
+    "immagini"
+   ],
+   "内容": [
+    "ないよう",
+    "contenuto"
+   ],
+   "文字": [
+    "もじ",
+    "caratteri; scrittura"
+   ],
+   "場面": [
+    "ばめん",
+    "scena"
+   ],
+   "想像": [
+    "そうぞう",
+    "immaginazione"
+   ],
+   "おもしろさ": [
+    "おもしろさ",
+    "fascino"
+   ],
+   "ペース": [
+    "ぺーす",
+    "ritmo"
+   ],
+   "直せます": [
+    "なおせます",
+    "poter rileggere (読み直す)"
+   ],
+   "閉じる": [
+    "とじる",
+    "chiudere"
+   ]
+  },
+  "q": [
+   {
+    "q": "Che cosa si dice di chi legge libri?",
+    "o": [
+     "Sta diminuendo",
+     "Sta aumentando",
+     "È rimasto invariato",
+     "Legge solo fumetti"
+    ],
+    "a": 0,
+    "e": "「{本|ほん}を{読|よ}む{人|ひと}が{減|へ}っていると{言|い}われています」."
+   },
+   {
+    "q": "Qual è il maggior fascino dei libri secondo l'autore?",
+    "o": [
+     "Il tempo dedicato a immaginare",
+     "Il basso prezzo",
+     "Le illustrazioni",
+     "La rapidità di lettura"
+    ],
+    "a": 0,
+    "e": "「この{想像|そうぞう}する{時間|じかん}が、{本|ほん}の{一番|いちばん}のおもしろさ」."
+   },
+   {
+    "q": "Quale altro pregio dei libri cita l'autore?",
+    "o": [
+     "Si legge al proprio ritmo",
+     "Si trovano ovunque",
+     "Costano poco",
+     "Non stancano mai"
+    ],
+    "a": 0,
+    "e": "「{自分|じぶん}のペースで{読|よ}めるのもいい{点|てん}」."
+   }
+  ]
+ },
+ {
+  "id": "t-n3-07",
+  "t": "スマートフォンのある{生活|せいかつ}",
+  "tipo": "brano",
+  "jp": [
+   "{今|いま}/で/は/、/ほとんど/の/{人|ひと}/が/スマートフォン/を/{持|も}って/います/。/{電話|でんわ}/を/かける/だけでなく/、/{地図|ちず}/を/{見|み}たり/、/{買|か}い{物|もの}/を/したり/、/{本|ほん}/を/{読|よ}ん/だり/する/こと/も/できて/、/とても/{便利|べんり}です/。",
+   "しかし/、/{便利|べんり}/に/なった/{一方|いっぽう}/で/、/{問題|もんだい}/も/{出|で}て/きました/。/たとえば/、/{歩|ある}きながら/{画面|がめん}/を/{見|み}て/、/{人|ひと}/に/ぶつかったり/、/{事故|じこ}/に/あったり/する/{人|ひと}/が/{増|ふ}えて/います/。",
+   "また/、/{家族|かぞく}/と/{一緒|いっしょ}/に/いて/も/、/それぞれ/が/{画面|がめん}/ばかり/{見|み}て/いて/、/{会話|かいわ}/が/{少|すく}なく/なった/という/{声|こえ}/も/よく/{聞|き}きます/。",
+   "{大切|たいせつ}な/の/は/、/スマートフォン/に/{使|つか}われる/ので/はなく/、/{自分|じぶん}/が/{上手|じょうず}/に/{使|つか}う/ことだ/と/{思|おも}います/。/{使|つか}う/{時間|じかん}/を/{決|き}めて/おく/など/、/ルール/を/{作|つく}って/みて/は/どうでしょう/か/。"
+  ],
+  "it": [
+   "Oggi quasi tutti hanno uno smartphone. Non serve solo a telefonare: si possono guardare mappe, fare acquisti e leggere libri; è molto comodo.",
+   "Tuttavia, da una parte è diventato comodo, ma dall'altra sono emersi dei problemi. Per esempio sono in aumento le persone che camminano guardando lo schermo e urtano altri o hanno incidenti.",
+   "Si sentono anche spesso lamentele secondo cui, pur stando con la famiglia, ognuno guarda solo lo schermo e si parla meno.",
+   "Penso che l'importante sia non farsi usare dallo smartphone, ma usarlo bene noi. Perché non provare a stabilire delle regole, per esempio decidendo in anticipo il tempo d'uso?"
+  ],
+  "gl": {
+   "ほとんど": [
+    "ほとんど",
+    "quasi tutti"
+   ],
+   "地図": [
+    "ちず",
+    "mappa"
+   ],
+   "便利です": [
+    "べんりです",
+    "comodo"
+   ],
+   "たとえば": [
+    "たとえば",
+    "per esempio"
+   ],
+   "画面": [
+    "がめん",
+    "schermo"
+   ],
+   "ぶつかったり": [
+    "ぶつかったり",
+    "urtare"
+   ],
+   "事故": [
+    "じこ",
+    "incidente"
+   ],
+   "増えて": [
+    "ふえて",
+    "aumentare"
+   ],
+   "会話": [
+    "かいわ",
+    "conversazione"
+   ],
+   "声": [
+    "こえ",
+    "voce; opinione"
+   ],
+   "上手": [
+    "じょうず",
+    "bravo; con abilità"
+   ],
+   "決めて": [
+    "きめて",
+    "decidere"
+   ],
+   "ルール": [
+    "るーる",
+    "regola"
+   ]
+  },
+  "q": [
+   {
+    "q": "Quale problema indica l'autore?",
+    "o": [
+     "Si cammina guardando lo schermo e si hanno incidenti",
+     "Lo smartphone costa troppo",
+     "Le batterie durano poco",
+     "Non c'è campo"
+    ],
+    "a": 0,
+    "e": "「{歩|ある}きながら{画面|がめん}を{見|み}て…{事故|じこ}にあったりする{人|ひと}が{増|ふ}えています」."
+   },
+   {
+    "q": "Che cosa succede in famiglia?",
+    "o": [
+     "Si parla di meno",
+     "Si mangia più spesso insieme",
+     "Si litiga di più",
+     "Si esce più spesso"
+    ],
+    "a": 0,
+    "e": "「{会話|かいわ}が{少|すく}なくなったという{声|こえ}」."
+   },
+   {
+    "q": "Che cosa propone l'autore?",
+    "o": [
+     "Stabilire delle regole sul tempo d'uso",
+     "Smettere di usare lo smartphone",
+     "Comprare un modello nuovo",
+     "Usarlo solo di notte"
+    ],
+    "a": 0,
+    "e": "「{使|つか}う{時間|じかん}を{決|き}めておくなど、ルールを{作|つく}ってみては」."
+   }
+  ]
+ },
+ {
+  "id": "t-n3-08",
+  "t": "アルバイトの{経験|けいけん}",
+  "tipo": "brano",
+  "jp": [
+   "{大学生|だいがくせい}/の/{頃|ころ}/、/{私|わたし}/は/レストラン/で/アルバイト/を/して/いました/。/{最初|さいしょ}/は/{注文|ちゅうもん}/を/{間違|まちが}えたり/、/{皿|さら}/を/{割|わ}ったり/して/、/{店長|てんちょう}/に/よく/{注意|ちゅうい}/されました/。",
+   "しかし/、/{先輩|せんぱい}/が/{親切|しんせつ}/に/{教|おし}えて/くれた/おかげ/で/、/{少|すこ}し/ずつ/{仕事|しごと}/に/{慣|な}れる/こと/が/できました/。",
+   "この/アルバイト/を{通|つう}じて/、/{私|わたし}/は/{人|ひと}/と/{話|はな}す/こと/が/{好|す}き/に/なりました/。/また/、/お{金|かね}/を/{稼|かせ}ぐ/{大変|たいへん}さ/も/{知|し}りました/。",
+   "{今|いま}/の/{仕事|しごと}/に/も/、/この/{経験|けいけん}/が/{役|やく}に{立|た}って/いる/と/{思|おも}います/。"
+  ],
+  "it": [
+   "Quando ero universitario facevo il lavoro part-time in un ristorante. All'inizio sbagliavo le ordinazioni e rompevo i piatti, e il direttore mi riprendeva spesso.",
+   "Tuttavia, grazie ai senpai che mi insegnavano con gentilezza, riuscii ad abituarmi gradualmente al lavoro.",
+   "Attraverso questo lavoro ho imparato ad amare parlare con le persone. Ho anche capito quanto sia faticoso guadagnare.",
+   "Penso che questa esperienza sia utile anche nel mio lavoro attuale."
+  ],
+  "gl": {
+   "アルバイト": [
+    "あるばいと",
+    "lavoro part-time"
+   ],
+   "注文": [
+    "ちゅうもん",
+    "ordinazione"
+   ],
+   "間違えたり": [
+    "まちがえたり",
+    "sbagliare"
+   ],
+   "割ったり": [
+    "わったり",
+    "rompere"
+   ],
+   "注意": [
+    "ちゅうい",
+    "richiamo"
+   ],
+   "親切": [
+    "しんせつ",
+    "gentile"
+   ],
+   "慣れる": [
+    "なれる",
+    "abituarsi"
+   ],
+   "を通じて": [
+    "をつうじて",
+    "attraverso"
+   ],
+   "稼ぐ": [
+    "かせぐ",
+    "guadagnare"
+   ],
+   "役に立って": [
+    "やくにたって",
+    "essere utile"
+   ]
+  },
+  "q": [
+   {
+    "q": "Che cosa succedeva all'inizio?",
+    "o": [
+     "Sbagliava e veniva ripreso",
+     "Veniva lodato sempre",
+     "Non lavorava",
+     "Cucinava"
+    ],
+    "a": 0,
+    "e": "「{注文|ちゅうもん}を{間違|まちが}えたり…{注意|ちゅうい}されました」."
+   },
+   {
+    "q": "Che cosa lo ha aiutato ad abituarsi?",
+    "o": [
+     "I senpai gentili",
+     "Un corso",
+     "Un aumento",
+     "Un libro"
+    ],
+    "a": 0,
+    "e": "「{先輩|せんぱい}が{親切|しんせつ}に{教|おし}えてくれたおかげで」."
+   },
+   {
+    "q": "Che cosa ha imparato dal lavoro?",
+    "o": [
+     "Ad apprezzare parlare con gli altri",
+     "A cucinare",
+     "A cantare",
+     "A guidare"
+    ],
+    "a": 0,
+    "e": "「{人|ひと}と{話|はな}すことが{好|す}きになりました」."
+   }
+  ]
+ },
+ {
+  "id": "t-n3-09",
+  "t": "{面接|めんせつ}のお{礼|れい}",
+  "tipo": "email",
+  "jp": [
+   "{山田|やまだ}{様|さま}",
+   "{本日|ほんじつ}/は/、/お{忙|いそが}しい{中|なか}/、/{面接|めんせつ}/の/{機会|きかい}/を/いただき/、/{誠|まこと}に/ありがとうございました/。",
+   "お{話|はなし}/を/うかがって/、/{御社|おんしゃ}/の/{仕事|しごと}/に/ますます/{興味|きょうみ}/を/{持|も}ちました/。/これ/まで/の/{経験|けいけん}/を/{生|い}かして/、/{貴社|きしゃ}/に/{貢献|こうけん}/したい/と/{考|かんが}えて/います/。",
+   "{結果|けっか}/を/お{待|ま}ち/して/おります/。/どうぞ/よろしく/お{願|ねが}い/いたします/。",
+   "{鈴木|すずき}"
+  ],
+  "it": [
+   "Gentile signor Yamada",
+   "La ringrazio sinceramente di avermi concesso il colloquio oggi nonostante i suoi impegni.",
+   "Dopo aver ascoltato quanto mi ha detto, mi sono interessato ancora di più al lavoro della vostra azienda. Vorrei contribuire all'azienda valorizzando le mie esperienze finora.",
+   "Attendo il risultato. La ringrazio fin d'ora.",
+   "Suzuki"
+  ],
+  "gl": {
+   "面接": [
+    "めんせつ",
+    "colloquio"
+   ],
+   "機会": [
+    "きかい",
+    "occasione"
+   ],
+   "誠に": [
+    "まことに",
+    "sinceramente"
+   ],
+   "興味": [
+    "きょうみ",
+    "interesse"
+   ],
+   "生かして": [
+    "いかして",
+    "valorizzare"
+   ],
+   "貢献": [
+    "こうけん",
+    "contributo"
+   ],
+   "結果": [
+    "けっか",
+    "risultato"
+   ]
+  },
+  "q": [
+   {
+    "q": "Perché scrive Suzuki?",
+    "o": [
+     "Per ringraziare dopo il colloquio",
+     "Per rinunciare al lavoro",
+     "Per chiedere uno stipendio",
+     "Per cambiare data"
+    ],
+    "a": 0,
+    "e": "「{面接|めんせつ}の{機会|きかい}をいただき、{誠|まこと}にありがとうございました」."
+   },
+   {
+    "q": "Che cosa vuole fare Suzuki?",
+    "o": [
+     "Contribuire all'azienda con la sua esperienza",
+     "Cambiare settore",
+     "Aprire un negozio",
+     "Tornare all'università"
+    ],
+    "a": 0,
+    "e": "「{経験|けいけん}を{生|い}かして、{貴社|きしゃ}に{貢献|こうけん}したい」."
+   },
+   {
+    "q": "Che cosa attende?",
+    "o": [
+     "Il risultato",
+     "Una telefonata del cliente",
+     "Un pacco",
+     "Un invito a cena"
+    ],
+    "a": 0,
+    "e": "「{結果|けっか}をお{待|ま}ちしております」."
+   }
+  ]
+ },
+ {
+  "id": "t-n3-10",
+  "t": "{健康|けんこう}のために",
+  "tipo": "brano",
+  "jp": [
+   "{最近|さいきん}/、/{運動|うんどう}/{不足|ふそく}/を/{感|かん}じて/いる/{人|ひと}/が/{増|ふ}えて/います/。/{仕事|しごと}/で/{一日|いちにち}{中|じゅう}/{座|すわ}って/いる/と/、/{体|からだ}/を/{動|うご}かす/{機会|きかい}/が/ほとんど/ない/からです/。",
+   "{運動|うんどう}/{不足|ふそく}/が/{続|つづ}く/と/、/{肩|かた}/や/{腰|こし}/が/{痛|いた}く/なる/だけでなく/、/{病気|びょうき}/に/なり/やすく/なる/と/{言|い}われて/います/。",
+   "と/は/いえ/、/{毎日|まいにち}/ジム/に/{通|かよ}う/の/は/{難|むずか}しい/という/{人|ひと}/も/{多|おお}いでしょう/。/そこで/おすすめな/の/は/、/エレベーター/を/{使|つか}わず/に/{階段|かいだん}/を/{上|のぼ}る/など/、/{日常|にちじょう}/の/{小|ちい}さな/{習慣|しゅうかん}/を/{変|か}える/ことです/。",
+   "{無理|むり}/を/せず/、/{続|つづ}けられる/{方法|ほうほう}/を/{見|み}つける/こと/が/{大切|たいせつ}です/。"
+  ],
+  "it": [
+   "Ultimamente sono in aumento le persone che sentono di fare poco movimento. Quando si sta seduti tutto il giorno al lavoro, non si ha quasi occasione di muovere il corpo.",
+   "Si dice che se la mancanza di movimento continua, non solo fanno male spalle e schiena, ma ci si ammala più facilmente.",
+   "Tuttavia, molte persone troveranno difficile andare in palestra ogni giorno. Perciò si consiglia di cambiare piccole abitudini quotidiane, come salire le scale invece di usare l'ascensore.",
+   "È importante trovare un metodo che si possa portare avanti senza sforzarsi troppo."
+  ],
+  "gl": {
+   "運動": [
+    "うんどう",
+    "movimento"
+   ],
+   "不足": [
+    "ふそく",
+    "mancanza"
+   ],
+   "機会": [
+    "きかい",
+    "occasione"
+   ],
+   "肩": [
+    "かた",
+    "spalla"
+   ],
+   "腰": [
+    "こし",
+    "schiena; fianchi"
+   ],
+   "病気": [
+    "びょうき",
+    "malattia"
+   ],
+   "日常": [
+    "にちじょう",
+    "quotidiano"
+   ],
+   "習慣": [
+    "しゅうかん",
+    "abitudine"
+   ],
+   "階段": [
+    "かいだん",
+    "scale"
+   ],
+   "続けられる": [
+    "つづけられる",
+    "continuare"
+   ]
+  },
+  "q": [
+   {
+    "q": "Perché si fa poco movimento?",
+    "o": [
+     "Si sta seduti tutto il giorno al lavoro",
+     "Il lavoro è fisico",
+     "Mancano le palestre",
+     "Fa troppo caldo"
+    ],
+    "a": 0,
+    "e": "「{一|いち}{日|にち}{中|ちゅう}{座|すわ}っていると」."
+   },
+   {
+    "q": "Che cosa consiglia l'autore?",
+    "o": [
+     "Cambiare piccole abitudini quotidiane",
+     "Iscriversi in palestra",
+     "Smettere di lavorare",
+     "Dormire di più"
+    ],
+    "a": 0,
+    "e": "「{日常|にちじょう}の{小|ちい}さな{習慣|しゅうかん}を{変|か}えること」."
+   },
+   {
+    "q": "Che cosa è importante?",
+    "o": [
+     "Trovare un metodo che si possa continuare",
+     "Allenarsi molto",
+     "Allenarsi solo nel weekend",
+     "Comprare attrezzi"
+    ],
+    "a": 0,
+    "e": "「{続|つづ}けられる{方法|ほうほう}を{見|み}つけること」."
+   }
+  ]
+ },
+ {
+  "id": "t-n3-11",
+  "t": "{図書館|としょかん}の{利用|りよう}{案内|あんない}",
+  "tipo": "annuncio",
+  "jp": [
+   "{市立|しりつ}/{図書館|としょかん}/から/の/お{知|し}らせ",
+   "{当館|とうかん}/で/は/、/{本|ほん}/を/{一人|ひとり}/{十|じゅう}{冊|さつ}/まで/、/{二|に}{週間|しゅうかん}/{借|か}りる/こと/が/できます/。",
+   "{返却|へんきゃく}/の/{期限|きげん}/を/{過|す}ぎた/{場合|ばあい}/は/、/{次|つぎ}に/{借|か}りられる/まで/に/、/{遅|おく}れた/{日数|にっすう}/と/{同|おな}じ/{日数|にっすう}/が/かかります/。",
+   "{借|か}りたい/{本|ほん}/が/{貸|か}し{出|だ}し{中|ちゅう}/の/{場合|ばあい}/は/、/{予約|よやく}/を/する/こと/が/できます/。/{本|ほん}/が/{戻|もど}り/{次第|しだい}/、/メール/で/お{知|し}らせ/します/。"
+  ],
+  "it": [
+   "Avviso dalla biblioteca comunale",
+   "In questa biblioteca si possono prendere in prestito fino a dieci libri a persona per due settimane.",
+   "Se si supera la scadenza della restituzione, per poter prendere di nuovo in prestito occorrerà un numero di giorni pari ai giorni di ritardo.",
+   "Se il libro che si desidera è già in prestito, è possibile prenotarlo. Appena il libro sarà restituito, vi avviseremo per e-mail."
+  ],
+  "gl": {
+   "市立": [
+    "しりつ",
+    "comunale"
+   ],
+   "当館": [
+    "とうかん",
+    "questa biblioteca"
+   ],
+   "十冊": [
+    "じゅうさつ",
+    "(contatore di libri)"
+   ],
+   "期限": [
+    "きげん",
+    "scadenza"
+   ],
+   "過ぎた": [
+    "すぎた",
+    "superare"
+   ],
+   "返却": [
+    "へんきゃく",
+    "restituzione"
+   ],
+   "貸し出し中": [
+    "かしだしちゅう",
+    "prestito"
+   ],
+   "予約": [
+    "よやく",
+    "prenotazione"
+   ],
+   "戻り": [
+    "もどり",
+    "tornare"
+   ]
+  },
+  "q": [
+   {
+    "q": "Quanti libri si possono prendere?",
+    "o": [
+     "Dieci a persona",
+     "Cinque a persona",
+     "Venti a persona",
+     "Uno a persona"
+    ],
+    "a": 0,
+    "e": "「{一|いち}{人|にん}{十|じゅう}{冊|さつ}まで」."
+   },
+   {
+    "q": "Che cosa succede se si restituisce in ritardo?",
+    "o": [
+     "Si deve attendere altrettanti giorni prima di un nuovo prestito",
+     "Si paga una multa",
+     "Si perde la tessera",
+     "Non succede nulla"
+    ],
+    "a": 0,
+    "e": "「{遅|おく}れた{日数|にっすう}と{同|おな}じ{日数|にっすう}がかかります」."
+   },
+   {
+    "q": "Come si viene avvisati quando il libro è disponibile?",
+    "o": [
+     "Per e-mail",
+     "Per telefono",
+     "Con una lettera",
+     "Non si viene avvisati"
+    ],
+    "a": 0,
+    "e": "「メールでお{知|し}らせします」."
+   }
+  ]
+ }
+]

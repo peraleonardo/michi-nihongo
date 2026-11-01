@@ -1,0 +1,103 @@
+{
+"dialoghi":[
+{"id":"dlg-n5-01","t":"{道|みち}を{聞|き}く","v":{"A":"F","B":"M"},"righe":[
+{"s":"A","t":"すみません、{郵便局|ゆうびんきょく}はどこですか。","i":"Mi scusi, dov'è l'ufficio postale?"},
+{"s":"B","t":"{郵便局|ゆうびんきょく}ですか。あの{銀行|ぎんこう}の{前|まえ}です。","i":"L'ufficio postale? È davanti a quella banca."},
+{"s":"A","t":"{駅|えき}から{近|ちか}いですか。","i":"È vicino alla stazione?"},
+{"s":"B","t":"はい、{歩|ある}いて{五分|ごふん}です。","i":"Sì, a piedi sono cinque minuti."},
+{"s":"A","t":"ありがとうございます。","i":"Grazie mille."}],
+"q":[{"q":"Dov'è l'ufficio postale?","o":["Davanti alla banca","Dietro la stazione","Accanto alla scuola","Dentro il parco"],"a":0,"e":"「あの{銀行|ぎんこう}の{前|まえ}です」: davanti a quella banca."},{"q":"Quanto ci vuole a piedi dalla stazione?","o":["5 minuti","10 minuti","15 minuti","50 minuti"],"a":0,"e":"「{歩|ある}いて{五分|ごふん}です」."}]},
+{"id":"dlg-n5-02","t":"{約束|やくそく}","v":{"A":"F","B":"M"},"righe":[
+{"s":"A","t":"{明日|あした}、{何時|なんじ}に{会|あ}いましょうか。","i":"A che ora ci vediamo domani?"},
+{"s":"B","t":"{三時|さんじ}はどうですか。","i":"Che ne dici delle tre?"},
+{"s":"A","t":"ごめんなさい、{三時|さんじ}は{学校|がっこう}があります。{四時|よじ}はどうですか。","i":"Scusa, alle tre ho scuola. Che ne dici delle quattro?"},
+{"s":"B","t":"はい、いいですよ。{四時|よじ}に{駅|えき}で{会|あ}いましょう。","i":"Sì, va bene. Alle quattro alla stazione."}],
+"q":[{"q":"A che ora si incontrano?","o":["Alle 4","Alle 3","Alle 7","Alle 9"],"a":0,"e":"Le 3 non vanno bene (scuola): scelgono {四時|よじ}. Attenzione: 4 = よ, 7 = しち, 9 = く."},{"q":"Dove si incontrano?","o":["Alla stazione","A scuola","Al parco","In biblioteca"],"a":0,"e":"「{駅|えき}で{会|あ}いましょう」."}]},
+{"id":"dlg-n5-03","t":"{買|か}い{物|もの}","v":{"A":"F","B":"M"},"righe":[
+{"s":"A","t":"すみません、このかばんはいくらですか。","i":"Scusi, quanto costa questa borsa?"},
+{"s":"B","t":"{五千円|ごせんえん}です。","i":"5000 yen."},
+{"s":"A","t":"ちょっと{高|たか}いですね。あのかばんは？","i":"È un po' cara. E quella laggiù?"},
+{"s":"B","t":"あれは{三千円|さんぜんえん}です。","i":"Quella costa 3000 yen."},
+{"s":"A","t":"じゃ、あれをください。","i":"Allora prendo quella."}],
+"q":[{"q":"Quale borsa compra la donna?","o":["Quella da 3000 yen","Quella da 5000 yen","Entrambe","Nessuna"],"a":0,"e":"「あれをください」: あれ = la borsa lontana, 3000 yen."},{"q":"Quanto costa la prima borsa?","o":["5000 yen","3000 yen","500 yen","8000 yen"],"a":0,"e":"{五千円|ごせんえん}. Attenzione: {三千|さんぜん} e {八千|はっせん} hanno letture particolari."}]},
+{"id":"dlg-n5-04","t":"{天気|てんき}","v":{"A":"F","B":"M"},"righe":[
+{"s":"A","t":"{今日|きょう}はいい{天気|てんき}ですね。","i":"Oggi è proprio una bella giornata."},
+{"s":"B","t":"ええ。でも、{明日|あした}は{雨|あめ}ですよ。","i":"Sì. Ma domani pioverà, sai."},
+{"s":"A","t":"そうですか。じゃ、{今日|きょう}、{公園|こうえん}へ{行|い}きましょう。","i":"Davvero? Allora andiamo al parco oggi."},
+{"s":"B","t":"いいですね。","i":"Ottima idea."}],
+"q":[{"q":"Com'è il tempo domani?","o":["Piove","È sereno","Nevica","Fa caldo"],"a":0,"e":"「{明日|あした}は{雨|あめ}です」."},{"q":"Dove vanno oggi?","o":["Al parco","Al mare","In stazione","A scuola"],"a":0,"e":"「{公園|こうえん}へ{行|い}きましょう」."}]},
+{"id":"dlg-n5-05","t":"{家族|かぞく}","v":{"A":"F","B":"M"},"righe":[
+{"s":"A","t":"ご{家族|かぞく}は{何人|なんにん}ですか。","i":"Quante persone siete in famiglia?"},
+{"s":"B","t":"{四人|よにん}です。{父|ちち}と{母|はは}と{妹|いもうと}と{私|わたし}です。","i":"Quattro. Mio padre, mia madre, mia sorella minore e io."},
+{"s":"A","t":"{妹|いもうと}さんは{学生|がくせい}ですか。","i":"Sua sorella è studentessa?"},
+{"s":"B","t":"はい、{高校生|こうこうせい}です。","i":"Sì, è al liceo."}],
+"q":[{"q":"Quante persone ci sono nella famiglia dell'uomo?","o":["4","3","5","2"],"a":0,"e":"「{四人|よにん}です」: attenzione, 4 persone = よにん (non よんにん)."},{"q":"Che cosa fa la sorella?","o":["Va al liceo","È all'università","Lavora","Non studia"],"a":0,"e":"「{高校生|こうこうせい}」= studente delle superiori."}]},
+{"id":"dlg-n5-06","t":"{趣味|しゅみ}","v":{"A":"F","B":"M"},"righe":[
+{"s":"A","t":"{休|やす}みの{日|ひ}は{何|なに}をしますか。","i":"Che cosa fai nei giorni liberi?"},
+{"s":"B","t":"{本|ほん}を{読|よ}んだり、{映画|えいが}を{見|み}たりします。","i":"Leggo libri, guardo film, e così via."},
+{"s":"A","t":"どんな{映画|えいが}が{好|す}きですか。","i":"Che tipo di film ti piace?"},
+{"s":"B","t":"{日本|にほん}の{映画|えいが}が{好|す}きです。","i":"Mi piacciono i film giapponesi."}],
+"q":[{"q":"Che cosa fa l'uomo nei giorni liberi?","o":["Legge e guarda film","Studia e lavora","Dorme tutto il giorno","Gioca a calcio"],"a":0,"e":"Struttura ～たり～たりします: fa cose come leggere e guardare film."},{"q":"Che film gli piacciono?","o":["Quelli giapponesi","Quelli italiani","Quelli americani","Non guarda film"],"a":0,"e":"「{日本|にほん}の{映画|えいが}が{好|す}きです」."}]},
+{"id":"dlg-n5-07","t":"{電話|でんわ}","v":{"A":"F","B":"M"},"righe":[
+{"s":"A","t":"もしもし、{田中|たなか}さんですか。","i":"Pronto, il signor Tanaka?"},
+{"s":"B","t":"いいえ、{田中|たなか}は{今|いま}いません。","i":"No, Tanaka adesso non c'è."},
+{"s":"A","t":"そうですか。また{電話|でんわ}します。","i":"Capisco. Richiamerò."},
+{"s":"B","t":"はい、{失礼|しつれい}します。","i":"Va bene, arrivederLa."}],
+"q":[{"q":"Il signor Tanaka è presente?","o":["No, non c'è","Sì, c'è","Sta arrivando","Sta mangiando"],"a":0,"e":"「いません」= non c'è (essere vivente, negativo)."},{"q":"Che cosa farà la donna?","o":["Richiamerà","Aspetterà","Scriverà una lettera","Andrà da lui"],"a":0,"e":"「また{電話|でんわ}します」."}]},
+{"id":"dlg-n5-08","t":"{教室|きょうしつ}で","v":{"A":"F","B":"M"},"righe":[
+{"s":"A","t":"{先生|せんせい}、{宿題|しゅくだい}はいつまでですか。","i":"Professore, fino a quando ci sono i compiti?"},
+{"s":"B","t":"{明日|あした}までです。","i":"Fino a domani."},
+{"s":"A","t":"{何|なん}ページですか。","i":"Quali pagine?"},
+{"s":"B","t":"{十|じゅっ}ページから{十五|じゅうご}ページまでです。","i":"Dalla pagina 10 alla 15."}],
+"q":[{"q":"Per quando sono i compiti?","o":["Domani","Oggi","Dopodomani","Lunedì"],"a":0,"e":"「{明日|あした}までです」."},{"q":"Quali pagine devono fare?","o":["Dalla 10 alla 15","Dalla 5 alla 10","Dalla 15 alla 20","Solo la 10"],"a":0,"e":"「{十|じゅっ}ページから{十五|じゅうご}ページまで」."}]}
+],
+"coppie":[
+{"id":"mp-n5-01","a":"おばさん","b":"おばあさん","ia":"zia; signora","ib":"nonna; anziana signora","cat":"vocale lunga/breve"},
+{"id":"mp-n5-02","a":"おじさん","b":"おじいさん","ia":"zio; signore","ib":"nonno; anziano signore","cat":"vocale lunga/breve"},
+{"id":"mp-n5-03","a":"ゆき","b":"ゆうき","ia":"neve","ib":"coraggio","cat":"vocale lunga/breve"},
+{"id":"mp-n5-04","a":"ビル","b":"ビール","ia":"edificio","ib":"birra","cat":"vocale lunga/breve"},
+{"id":"mp-n5-05","a":"とる","b":"とおる","ia":"prendere","ib":"passare","cat":"vocale lunga/breve"},
+{"id":"mp-n5-06","a":"おおきい","b":"おおい","ia":"grande","ib":"numeroso","cat":"vocale lunga/breve"},
+{"id":"mp-n5-07","a":"きて","b":"きって","ia":"vieni / venendo","ib":"francobollo","cat":"っ doppia"},
+{"id":"mp-n5-08","a":"さか","b":"さっか","ia":"salita","ib":"scrittore","cat":"っ doppia"},
+{"id":"mp-n5-09","a":"おと","b":"おっと","ia":"suono","ib":"marito","cat":"っ doppia"},
+{"id":"mp-n5-10","a":"いた","b":"いった","ia":"c'era","ib":"è andato","cat":"っ doppia"},
+{"id":"mp-n5-11","a":"びょういん","b":"びよういん","ia":"ospedale","ib":"parrucchiere","cat":"じゅう/じゅ・ょう/よう"},
+{"id":"mp-n5-12","a":"てんき","b":"でんき","ia":"tempo (meteo)","ib":"elettricità; luce","cat":"sorda/sonora"},
+{"id":"mp-n5-13","a":"かぎ","b":"かき","ia":"chiave","ib":"cachi","cat":"sorda/sonora"},
+{"id":"mp-n5-14","a":"ちかい","b":"ちがい","ia":"vicino","ib":"differenza","cat":"sorda/sonora"}
+],
+"dettato":[
+{"id":"dic-n5-01","t":"{私|わたし}は{学生|がくせい}です。","i":"Sono uno studente.","g":"F"},
+{"id":"dic-n5-02","t":"これはいくらですか。","i":"Quanto costa questo?","g":"M"},
+{"id":"dic-n5-03","t":"{今日|きょう}は{天気|てんき}がいいです。","i":"Oggi il tempo è bello.","g":"F"},
+{"id":"dic-n5-04","t":"{毎朝|まいあさ}コーヒーを{飲|の}みます。","i":"Ogni mattina bevo il caffè.","g":"M"},
+{"id":"dic-n5-05","t":"{駅|えき}で{友達|ともだち}に{会|あ}います。","i":"Incontro un amico alla stazione.","g":"F"},
+{"id":"dic-n5-06","t":"{明日|あした}は{休|やす}みです。","i":"Domani è giorno libero.","g":"M"},
+{"id":"dic-n5-07","t":"{七時|しちじ}に{起|お}きます。","i":"Mi alzo alle sette.","g":"F","alt":["しちじにおきます"]},
+{"id":"dic-n5-08","t":"{図書館|としょかん}で{本|ほん}を{読|よ}みます。","i":"Leggo un libro in biblioteca.","g":"M"},
+{"id":"dic-n5-09","t":"{猫|ねこ}は{机|つくえ}の{下|した}にいます。","i":"Il gatto è sotto la scrivania.","g":"F"},
+{"id":"dic-n5-10","t":"{日本語|にほんご}が{少|すこ}し{分|わ}かります。","i":"Capisco un po' di giapponese.","g":"M"}
+],
+"risposte":[
+{"id":"res-n5-01","p":"はじめまして。{田中|たなか}です。","i":"Piacere. Sono Tanaka.","o":["はじめまして。マリアです。","いってきます。","どういたしまして。"],"a":0,"e":"Alla presentazione si risponde con はじめまして + proprio nome.","g":"M"},
+{"id":"res-n5-02","p":"ありがとうございます。","i":"Grazie mille.","o":["どういたしまして。","いただきます。","おやすみなさい。"],"a":0,"e":"どういたしまして = prego.","g":"F"},
+{"id":"res-n5-03","p":"お{元気|げんき}ですか。","i":"Come stai?","o":["はい、{元気|げんき}です。","はい、{学生|がくせい}です。","いいえ、ありません。"],"a":0,"e":"Si risponde con {元気|げんき}です.","g":"M"},
+{"id":"res-n5-04","p":"これはいくらですか。","i":"Quanto costa questo?","o":["{三百円|さんびゃくえん}です。","{三時|さんじ}です。","{三人|さんにん}です。"],"a":0,"e":"いくら = prezzo → {円|えん}.","g":"F"},
+{"id":"res-n5-05","p":"{何時|なんじ}ですか。","i":"Che ore sono?","o":["{三時|さんじ}です。","{三月|さんがつ}です。","{三日|みっか}です。"],"a":0,"e":"{何時|なんじ} → risposta con {時|じ}.","g":"M"},
+{"id":"res-n5-06","p":"{昨日|きのう}、{何|なに}を{食|た}べましたか。","i":"Che cosa hai mangiato ieri?","o":["カレーを{食|た}べました。","カレーを{食|た}べます。","カレーが{好|す}きです。"],"a":0,"e":"Domanda al passato → risposta al passato.","g":"F"},
+{"id":"res-n5-07","p":"{一緒|いっしょ}に{映画|えいが}を{見|み}ませんか。","i":"Guardiamo un film insieme?","o":["いいですね。{行|い}きましょう。","はい、{見|み}ませんでした。","いいえ、{見|み}ます。"],"a":0,"e":"Invito → accettazione con いいですね.","g":"M"},
+{"id":"res-n5-08","p":"ただいま。","i":"Sono tornato.","o":["おかえりなさい。","いってらっしゃい。","おやすみなさい。"],"a":0,"e":"ただいま ↔ おかえりなさい.","g":"F"},
+{"id":"res-n5-09","p":"いってきます。","i":"Esco (e torno).","o":["いってらっしゃい。","おかえりなさい。","いただきます。"],"a":0,"e":"いってきます ↔ いってらっしゃい.","g":"M"}
+],
+"shadowing":[
+{"id":"shd-n5-01","t":"はじめまして。マリアです。どうぞよろしくお{願|ねが}いします。","i":"Piacere, sono Maria. Mi raccomando!","g":"F"},
+{"id":"shd-n5-02","t":"{私|わたし}は{毎日|まいにち}{日本語|にほんご}を{勉強|べんきょう}します。","i":"Studio giapponese ogni giorno.","g":"M"},
+{"id":"shd-n5-03","t":"すみません、{駅|えき}はどこですか。","i":"Mi scusi, dov'è la stazione?","g":"F"},
+{"id":"shd-n5-04","t":"これをください。","i":"Prendo questo, per favore.","g":"M"},
+{"id":"shd-n5-05","t":"{今日|きょう}はいい{天気|てんき}ですね。","i":"Oggi è proprio una bella giornata.","g":"F"},
+{"id":"shd-n5-06","t":"{一緒|いっしょ}に{昼|ひる}ご{飯|はん}を{食|た}べませんか。","i":"Pranziamo insieme?","g":"M"},
+{"id":"shd-n5-07","t":"もう{一度|いちど}{言|い}ってください。","i":"Lo ripeta ancora una volta, per favore.","g":"F"},
+{"id":"shd-n5-08","t":"ありがとうございました。また{来|き}ます。","i":"Grazie di tutto. Tornerò.","g":"M"}
+]
+}
