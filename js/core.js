@@ -1,6 +1,6 @@
 'use strict';
 /* Nucleo: utilità, storage, XP/serie/badge, SRS, caricamento dati, furigana */
-const APP_VERSION = '2.5.0'; // tienila uguale a VERSION in sw.js
+const APP_VERSION = '2.5.1'; // tienila uguale a VERSION in sw.js
 const LEVELS = ['n5', 'n4', 'n3'];
 const LV = { n5: 'N5', n4: 'N4', n3: 'N3' };
 const SEC = {

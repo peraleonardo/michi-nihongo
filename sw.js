@@ -1,6 +1,6 @@
 /* Service worker di Michi.
    >>> Per forzare l'aggiornamento sui dispositivi, cambia VERSION (e APP_VERSION in js/core.js) ad ogni pubblicazione. <<< */
-const VERSION = '2.5.0';
+const VERSION = '2.5.1';
 const CACHE = 'michi-' + VERSION;
 const AUDIO_CACHE = 'michi-audio-3'; // cambia il numero (anche in js/audio.js) quando rigeneri i file audio: così i dispositivi riscaricano le nuove registrazioni
 const CORE = [
